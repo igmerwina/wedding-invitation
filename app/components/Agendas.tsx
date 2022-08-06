@@ -12,7 +12,7 @@ const Agendas = () => {
         Pernikahan kami akan dilaksanakan pada:
       </div>
       <h3 className="text-3xl md:text-4xl font-black mb-6 text-cente text-gray-700 font-sans">
-        SABTU, 30 JULI 2022
+        Rabu, 12 Oktober 2022
       </h3>
       <div className="px-12 flex max-w-md mx-auto mb-10">
         <a
@@ -26,19 +26,28 @@ const Agendas = () => {
 
       <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl font-black">
         <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
-          AKAD NIKAH
+          Upacara Pawiwahan
         </div>
-        <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
-          08.00 WIB
+        <div className="col-span-1 text-2xl text-gray-700 text-right md:text-center font-sans">
+          12 Oktober 2022 - 11.00 WITA
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl  font-black">
         <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
-          RESEPSI
+          RESEPSI I 
         </div>
-        <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
-          11.00 WIB
+        <div className="col-span-2 text-gray-700 text-2xl text-right md:text-center font-sans">
+          13 Oktober 2022 - 10.00 WITA
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl  font-black">
+        <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
+          RESEPSI II
+        </div>
+        <div className="col-span-1 text-gray-700 text-2xl text-right md:text-center font-sans">
+          20 November 2022 - 11.00 WITA
         </div>
       </div>
     </div>

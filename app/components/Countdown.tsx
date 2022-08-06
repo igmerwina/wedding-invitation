@@ -1,6 +1,6 @@
 import { memo, useEffect, useState } from "react";
 
-const EVENT_DATE = "Juliy 30, 2022 08:00:00";
+const EVENT_DATE = "October 12, 2022 10:00:00";
 const COUNTDOWN_DATE = new Date(EVENT_DATE).getTime();
 
 interface COUNTDOWNTYPE {

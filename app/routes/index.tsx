@@ -9,8 +9,8 @@ import Message from "~/components/Massage";
 import SectionWrapper from "~/components/Utils/SectionWrapper";
 import WelcomeModal from "~/components/WelcomeModal";
 import { indexAction, indexLoader } from "~/controls";
-import heroBg from "~/images/hero-bg.jpg";
-import heroBgMobile from "~/images/hero-bg-mobile.jpg";
+import heroBg from "~/images/hero-bgs.jpg";
+import heroBgMobile from "~/images/hero-bg-mobiles.jpg";
 import MusicPlayer from "~/components/MusicPlayer";
 import GalleryPhotos from "~/components/GalleryPhotos";
 
@@ -50,16 +50,16 @@ export default function Index() {
       >
         <div className="mb-1">
           <h4
-            className="text-center font-head font-bold text-5xl mb-4 text-[#EFEFEF]"
+            className="text-left font-head font-bold text-5xl mb-4 text-[#EFEFEF]"
             style={{ textShadow: "3px 3px 1px #CE7BB0" }}
           >
-            Ami & Fauzi
+            Erwin & Iin
           </h4>
           <div
             className="text-center font-black font-sans text-md text-[#EFEFEF] italic border-t-2 border-[#CE7BB0] pt-3"
             style={{ textShadow: "2px 2px 1px #CE7BB0" }}
           >
-            30.07.2022
+            13.10.2022 | 20.11.2022
           </div>
         </div>
       </div>
@@ -86,10 +86,6 @@ export default function Index() {
 
       <SectionWrapper className="mb-36">
         <Message />
-      </SectionWrapper>
-
-      <SectionWrapper className="mb-36">
-        <DigitalEnvelope />
       </SectionWrapper>
 
       <div className="py-24 bg-[#EFEFEF] text-gray-700 relative text-center font-sans">

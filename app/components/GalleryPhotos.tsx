@@ -1,15 +1,15 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import foto1 from "~/images/foto1.jpg";
-import foto2 from "~/images/foto2.jpg";
-import foto3 from "~/images/foto3.jpg";
-import foto4 from "~/images/foto4.jpg";
-import foto5 from "~/images/foto5.jpg";
-import foto6 from "~/images/foto6.jpg";
-import foto7 from "~/images/foto7.jpg";
-import foto8 from "~/images/foto8.jpg";
-import foto9 from "~/images/foto9.jpg";
+import foto1 from "~/images/foto-1.jpg";
+import foto2 from "~/images/foto-2.jpg";
+import foto3 from "~/images/foto-3.jpg";
+import foto4 from "~/images/foto-4.jpg";
+import foto5 from "~/images/foto-5.jpg";
+import foto6 from "~/images/foto-6.jpg";
+import foto7 from "~/images/foto-7.jpg";
+import foto8 from "~/images/foto-8.jpg";
+import foto9 from "~/images/foto-9.jpg";
 
 const photos = [
   {
