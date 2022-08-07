@@ -29,7 +29,7 @@ const Agendas = () => {
           Upacara Pawiwahan
         </div>
         <div className="col-span-1 text-xl text-gray-700 text-right md:text-center font-sans">
-          12 Oktober 2022 - 11.00 WITA
+          12 Oktober 2022
         </div>
       </div>
 
