@@ -609,6 +609,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 6rem;
 }
 
+.mb-28 {
+  margin-bottom: 7rem;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -799,17 +807,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
-.border-t-2 {
-  border-top-width: 2px;
-}
-
 .border-t {
   border-top-width: 1px;
-}
-
-.border-\[\#CE7BB0\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(206 123 176 / var(--tw-border-opacity));
 }
 
 .border-gray-400 {
@@ -1018,10 +1017,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.25rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
 .pt-24 {
   padding-top: 6rem;
 }
@@ -1078,6 +1073,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -1152,6 +1162,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -1259,6 +1274,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 0.75rem;
   }
 
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .md\:h-64 {
     height: 16rem;
   }
@@ -1271,8 +1290,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 2.75rem;
   }
 
-  .md\:h-\[750px\] {
-    height: 750px;
+  .md\:h-\[890px\] {
+    height: 890px;
   }
 
   .md\:w-1\/2 {
@@ -1363,6 +1382,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 

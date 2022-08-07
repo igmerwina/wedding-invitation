@@ -3,16 +3,16 @@ import { useMediaQuery } from "react-responsive";
 import Agendas from "~/components/Agendas";
 import BrideAndGroom from "~/components/BrideAndGroom";
 import Countdown from "~/components/Countdown";
-import DigitalEnvelope from "~/components/DigitalEnvelope";
 import LocationMap from "~/components/LocationMap";
 import Message from "~/components/Massage";
 import SectionWrapper from "~/components/Utils/SectionWrapper";
 import WelcomeModal from "~/components/WelcomeModal";
 import { indexAction, indexLoader } from "~/controls";
-import heroBg from "~/images/hero-bgs.jpg";
+import heroBg from "~/images/hero-bg.jpg";
 import heroBgMobile from "~/images/hero-bg-mobiles.jpg";
 import MusicPlayer from "~/components/MusicPlayer";
 import GalleryPhotos from "~/components/GalleryPhotos";
+import LocationMapLombok from "~/components/LocationMapLombok";
 
 export const loader = indexLoader;
 export const action = indexAction;
@@ -45,21 +45,27 @@ export default function Index() {
       <WelcomeModal isOpen={openWelcome} onClose={onCloseWelcomeModal} />
 
       <div
-        className="flex justify-center items-center h-screen md:h-[750px] bg-no-repeat bg-center bg-cover"
+        className="flex justify-center items-center h-screen md:h-[890px] bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: `url(${isMobile ? heroBgMobile : heroBg})` }}
       >
-        <div className="mb-1">
+        <div className="mb-1 md:w-1/2">
+          <h5
+            className="text-left font-head text-2xl mb-4 text-[#EFEFEF]"
+            style={{ textShadow: "1px 1px 1px #CE7BB0" }}
+          >
+            The Wedding Of
+          </h5>
           <h4
-            className="text-left font-head font-bold text-5xl mb-4 text-[#EFEFEF]"
+            className="text-left font-head text-5xl mb-4 text-[#EFEFEF]"
             style={{ textShadow: "3px 3px 1px #CE7BB0" }}
           >
             Erwin & Iin
           </h4>
           <div
-            className="text-center font-black font-sans text-md text-[#EFEFEF] italic border-t-2 border-[#CE7BB0] pt-3"
-            style={{ textShadow: "2px 2px 1px #CE7BB0" }}
+            className="text-left font-head text-md text-[#EFEFEF]"
+            style={{ textShadow: "1px 1px 1px #CE7BB0" }}
           >
-            13.10.2022 | 20.11.2022
+            12 October 2022
           </div>
         </div>
       </div>
@@ -76,9 +82,12 @@ export default function Index() {
         <Agendas />
       </SectionWrapper>
 
-      <div className="mb-24">
+      <SectionWrapper className="mb-24">
         <LocationMap />
-      </div>
+      </SectionWrapper>
+      <SectionWrapper className="mb-24">
+        <LocationMapLombok />
+      </SectionWrapper>
 
       <SectionWrapper className="mb-36">
         <GalleryPhotos />
@@ -89,7 +98,8 @@ export default function Index() {
       </SectionWrapper>
 
       <div className="py-24 bg-[#EFEFEF] text-gray-700 relative text-center font-sans">
-        © 2022 by <span className="font-semibold">Fauzi</span>
+        © 2022 by <span className="font-semibold"><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></span><br/>
+        <p className="text-xs text-gray-400"><a href="https://github.com/igmerwina/wedding-invitation" target="blank">Source</a></p>
       </div>
 
       <MusicPlayer play={!openWelcome} />

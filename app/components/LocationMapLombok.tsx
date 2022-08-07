@@ -1,14 +1,14 @@
 import SectionWrapper from "./Utils/SectionWrapper";
 
 const MAP_EMBEDED_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.786648656996!2d115.16062641538797!3d-8.42260218737717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd225d389fc9011%3A0x49760d2db5b741a4!2sBalai%20Bajar%20Cacab%20Jangkahan!5e0!3m2!1sen!2sid!4v1659887713299!5m2!1sen!2sid";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.325088140063!2d116.11872271538942!3d-8.564706189243113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc0b633c190d1%3A0x45ecf492cff9eca0!2sLombok%20Astoria%20-%20Hotel!5e0!3m2!1sen!2sid!4v1659887839160!5m2!1sen!2sid";
 const MAP_REDIRECT_URL =
-  "https://www.google.com/maps/dir//Balai+Bajar+Cacab+Jangkahan,+H5G7%2BX44,+Cacab,+Biaung,+Penebel,+Tabanan+Regency,+Bali+82181/@-8.422521,115.1277957,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x2dd225d389fc9011:0x49760d2db5b741a4!2m2!1d115.1628337!2d-8.4226115!3e0";
-const MAP_TITLE = "Desa Cacab, Penebel Tabanan";
+  "https://www.google.com/maps/dir//Lombok+Astoria+-+Hotel,+Jl.+Jend.+Sudirman+No.40,+Rembiga,+Selaparang,+Mataram+City,+West+Nusa+Tenggara+83124/@-8.5647062,116.1187227,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x2dcdc0b633c190d1:0x45ecf492cff9eca0!2m2!1d116.1209288!2d-8.5646417!3e0";
+const MAP_TITLE = "Hotel Lombok Astoria, Mataram, NTB";
 const MAP_ADDRESS =
-  "Dusun Cacab - Jangkahan. Desa biaung. Kecamatan Penebel, Kabupaten Tabanan, Bali, 82152";
+  "Jl. Jend. Sudirman No.40, Rembiga, Kec. Selaparang, Kota Mataram, Nusa Tenggara Bar. 83124";
 
-const LocationMap = () => {
+const LocationMapLombok = () => {
   return (
     <div className="py-10 bg-[#EFEFEF]">
       <SectionWrapper>
@@ -32,13 +32,13 @@ const LocationMap = () => {
           <div className="md:w-1/2 w-full px-4 mb-6 md:mb-0">
             <div className="sticky top-8 text-center md:text-left">
               <h3 className="text-3xl font-head font-bold mb-3 text-gray-700">
-                Lokasi Resepsi I
+                Lokasi Resepsi II
               </h3>
               <h4 className="text-xl md:text-2xl mb-4 font-sans font-semibold text-gray-700">
                 {MAP_TITLE}
               </h4>
               <p className="mb-16 md:mb-5 font-sans">{MAP_ADDRESS}</p>
-              <p className="mb-3 font-sans font-bold">13 Oktober 2022</p>
+              <p className="mb-3 font-sans font-bold">20 November 2022</p>
               <div className="flex md:justify-start justify-center">
                 <a
                   href={MAP_REDIRECT_URL}
@@ -56,4 +56,4 @@ const LocationMap = () => {
   );
 };
 
-export default LocationMap;
+export default LocationMapLombok;

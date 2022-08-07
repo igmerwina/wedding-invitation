@@ -93,8 +93,6 @@ const GalleryPhotos = () => {
             {viewerIsOpen ? (
               <Modal onClose={closeLightbox}>
                 <Carousel
-                  styles={{}}
-                  currentIndex={currentImage}
                   views={photos.map((x) => ({
                     source: x.src,
                   }))}
