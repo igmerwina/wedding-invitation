@@ -110,7 +110,7 @@ const Message = memo(() => {
                 <h5 className="font-black font-sans text-gray-700 mb-1">
                   {message.name}
                 </h5>
-                <p className="whitespace-pre-wrap font-sans text-gray-800 leading-6">
+                <p className="whitespace-pre-wrap font-sans text-gray-800 leading-6 border-b-4 px-3 py-1.5">
                   {message.message}
                 </p>
               </div>

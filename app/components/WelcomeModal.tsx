@@ -21,7 +21,7 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
       <div className="bg-[#EFEFEF] h-screen w-screen flex flex-row justify-center items-start fixed overflow-auto py-20 box-border">
         <div className="flex flex-col items-center p-5 my-auto w-full md:w-[500]">
           <h5 className="text-center font-medium font-sans text-xl md:text-2xl mb-2 md:mb-3 text-gray-500">
-            Wedding Invitation of
+            The Wedding Invitation of
           </h5>
           <h4 className="text-center font-head text-5xl md:text-6xl mb-6 text-gray-800">
             Erwin & Iin

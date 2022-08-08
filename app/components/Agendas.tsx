@@ -11,7 +11,7 @@ const Agendas = () => {
       <div className="mb-4 text-gray-500 font-head md:text-lg font-medium">
         Resepsi pernikahan kami akan dilaksanakan pada:
       </div>
-      <h3 className="text-3xl md:text-4xl font-black mb-6 text-cente text-gray-700 font-sans">
+      <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-sans">
         Kamis, 13 Oktober 2022
       </h3>
       <div className="px-12 flex max-w-md mx-auto mb-10">

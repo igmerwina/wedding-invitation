@@ -74,7 +74,7 @@ export default function Index() {
         <BrideAndGroom />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-36 pt-24">
+      <SectionWrapper>
         <Countdown />
       </SectionWrapper>
 
@@ -82,9 +82,14 @@ export default function Index() {
         <Agendas />
       </SectionWrapper>
 
+      <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
+        <h4 className="mb-1">Lokasi</h4>
+      </div>
+
       <SectionWrapper className="mb-24">
         <LocationMap />
       </SectionWrapper>
+      
       <SectionWrapper className="mb-24">
         <LocationMapLombok />
       </SectionWrapper>

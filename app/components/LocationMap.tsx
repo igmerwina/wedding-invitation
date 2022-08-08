@@ -32,7 +32,7 @@ const LocationMap = () => {
           <div className="md:w-1/2 w-full px-4 mb-6 md:mb-0">
             <div className="sticky top-8 text-center md:text-left">
               <h3 className="text-3xl font-head font-bold mb-3 text-gray-700">
-                Lokasi Resepsi I
+                Resepsi I
               </h3>
               <h4 className="text-xl md:text-2xl mb-4 font-sans font-semibold text-gray-700">
                 {MAP_TITLE}
