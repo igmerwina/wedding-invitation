@@ -1,10 +1,7 @@
-# amifauzi.com
+# Wedding invitation erwin & iin 
 
-![amifauzi.com-open](https://socialify.git.ci/fauzialz/amifauzi.com-open/image?font=Inter&forks=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
+Based on [amifauzi](https://github.com/fauzialz/amifauzi.com-open) wedding invitation.
 
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /> <img src="https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white" />
-
-I built this website for my personal wedding website [amifauzi.com](https://www.amifauzi.com/?to=Rekan+Developer).
 Available features:
 
 - Welcome modal connected to Google Sheet
@@ -20,7 +17,7 @@ Available features:
 
 ## Depelopment
 
-This project use [Remix](https://remix.run/docs). To run your Remix app locally, make sure your project's local dependencies are installed:
+Make sure your project's local dependencies are installed:
 
 ```sh
 npm install
