@@ -28,17 +28,17 @@ const Agendas = () => {
         <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
           Upacara Pawiwahan
         </div>
-        <div className="col-span-1 text-xl text-gray-700 text-right md:text-center font-sans">
+        <div className="col-span-1 text-lg text-gray-700 text-right md:text-center font-sans">
           12 Oktober 2022
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl  font-black">
         <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
-          RESEPSI I 
+          RESEPSI I
         </div>
-        <div className="col-span-2 text-gray-700 text-xl text-right md:text-center font-sans">
-          13 Oktober 2022 - 10.00 WITA
+        <div className="col-span-1 text-gray-700 text-lg text-right md:text-center font-sans">
+          Rabu, 13 Oktober 2022 - 11.00 WITA
         </div>
       </div>
 
@@ -46,8 +46,8 @@ const Agendas = () => {
         <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
           RESEPSI II
         </div>
-        <div className="col-span-1 text-gray-700 text-xl text-right md:text-center font-sans">
-          20 November 2022 - 11.00 WITA
+        <div className="col-span-1 text-gray-700 text-lg text-right md:text-center font-sans">
+          Minggu, 20 November 2022 - 11.00 WITA
         </div>
       </div>
     </div>

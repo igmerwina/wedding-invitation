@@ -45,7 +45,7 @@ export default function Index() {
       <WelcomeModal isOpen={openWelcome} onClose={onCloseWelcomeModal} />
 
       <div
-        className="flex justify-center items-center h-screen md:h-[890px] bg-no-repeat bg-center bg-cover"
+        className="flex justify-center items-center h-screen md:h-[800px] bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: `url(${isMobile ? heroBgMobile : heroBg})` }}
       >
         <div className="mb-1 md:w-1/2">
@@ -83,7 +83,7 @@ export default function Index() {
       </SectionWrapper>
 
       <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
-        <h4 className="mb-1">Lokasi</h4>
+        <h4 className="mb-1">Lokasi Acara</h4>
       </div>
 
       <SectionWrapper className="mb-24">
