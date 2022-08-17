@@ -17,7 +17,7 @@ const LocationMapLombok = () => {
             <div className="p-2 bg-white rounded-lg shadow-lg">
               <iframe
                 src={MAP_EMBEDED_URL}
-                className="w-full h-[580px] md:h-[450px]"
+                className="w-full h-[350px] md:h-[350px]"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
@@ -31,10 +31,10 @@ const LocationMapLombok = () => {
 
           <div className="md:w-1/2 w-full px-4 mb-6 md:mb-0">
             <div className="sticky top-8 text-center md:text-left">
-              <h3 className="text-3xl font-head font-bold mb-3 text-gray-700">
+              <h3 className="text-2xl font-head mb-3 font-semibold text-gray-700">
                 Resepsi II
               </h3>
-              <h4 className="text-xl md:text-2xl mb-4 font-sans font-semibold text-gray-700">
+              <h4 className="text-xl md:text-xl mb-4 font-sans text-gray-700">
                 {MAP_TITLE}
               </h4>
               <p className="mb-16 md:mb-5 font-sans">{MAP_ADDRESS}</p>

@@ -1,4 +1,5 @@
 import { memo, useEffect, useState } from "react";
+import TextWithLine from "./Utils/TextWithLine";
 
 const EVENT_DATE = "October 12, 2022 10:00:00";
 const COUNTDOWN_DATE = new Date(EVENT_DATE).getTime();
@@ -45,8 +46,7 @@ const Countdown = memo(() => {
   return (
     <div className="w-full px-1 md:px-4">
       <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
-        <h4 className="mb-1">Hitung Mundur</h4>
-        <h4>Menuju Pernikahan Kami</h4>
+        <TextWithLine>Hitung Mundur Hari Bahagia Kami</TextWithLine>
       </div>
 
       <div className="flex justify-center pb-20">

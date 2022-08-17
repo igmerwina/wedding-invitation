@@ -1,14 +1,10 @@
 import TextWithLine from "./Utils/TextWithLine";
 import bride from "~/images/erwin-img.jpg";
-import groom from "~/images/iin-img.jpg";
 
 const Protokol = () => {
   return (
-    <div className="pt-5 items-center">
-      <h3 className="text-3xl text-center font-sans font-bold text-gray-700 mb-6">
-        Protokol Kesehatan
-      </h3>
-      <div className="w-full flex flex-wrap pb-5">
+    <div className="pt-5 items-center w-ful">
+      <div className="w-full flex">
         <div className="md:w-1/3 px-2">
           <div className="flex flex-col items-center py-14 sm:px-8 text-center">
             <img

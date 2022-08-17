@@ -15,6 +15,7 @@ import MusicPlayer from "~/components/MusicPlayer";
 import GalleryPhotos from "~/components/GalleryPhotos";
 import LocationMapLombok from "~/components/LocationMapLombok";
 import ProtokolKesehatan from "~/components/Protokol";
+import TextWithLine from "~/components/Utils/TextWithLine";
 
 export const loader = indexLoader;
 export const action = indexAction;
@@ -76,44 +77,49 @@ export default function Index() {
         <BrideAndGroom />
       </SectionWrapper>
 
-      <SectionWrapper>
+      <SectionWrapper className="mb-10">
         <Countdown />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-36">
+      <SectionWrapper className="mb-20">
         <Agendas />
       </SectionWrapper>
 
-      <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
-        <h4 className="mb-1">Lokasi Acara</h4>
-      </div>
-
-      <SectionWrapper className="mb-24 pt-1">
+      <SectionWrapper className="mb-10 pt-1">
+        <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
+          <h4 className="mb-1"><TextWithLine>Lokasi Acara</TextWithLine></h4>
+        </div>
         <LocationMap />
       </SectionWrapper>
       
-      <SectionWrapper className="mb-24">
+      <SectionWrapper className="mb-20">
         <LocationMapLombok />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-36">
+      <SectionWrapper className="mb-20">
         <GalleryPhotos />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-36">
+      <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
+          <h4 className="mb-1"><TextWithLine>Berikan Doa Terbaik Untuk Kami</TextWithLine></h4>
+        </div>
+      <SectionWrapper className="mb-20 bg-[#EFEFEF]">
         <Message />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-36">
+      <SectionWrapper className="mb-0">
         <ProtokolKesehatan />
       </SectionWrapper>
 
       <div 
-        className="py-24 text-gray-50 relative text-center font-sans"
+        className="py-40 text-gray-50 relative text-center font-sans"
         style={{textShadow: "1px 1px 1px #EFEFEF", backgroundRepeat: "no-repeat", opacity: 0.87, backgroundSize: "100%", backgroundImage: `url(${footerbg})`}}
       >
         © 2022 <br/> with💕by <span className="font-semibold"><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></span><br/>
-        <p className="text-xs text-gray-50" style={{textShadow: "1px 1px 1px #EFEFEF" }}><a href="https://github.com/igmerwina/wedding-invitation" target="blank">Source</a></p>
+        <p style={{textShadow: "1px 1px 1px #EFEFEF" }}>
+          <a href="https://github.com/igmerwina/wedding-invitation" target="blank">👨‍💻  &nbsp;</a>
+          <a href="https://www.instagram.com/holly.lotus/" target="blank">📸 </a>
+        </p>
       </div>
 
       <MusicPlayer play={!openWelcome} />
