@@ -86,7 +86,7 @@ export default function Index() {
       </SectionWrapper>
 
       <SectionWrapper className="mb-10 pt-1">
-        <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
+        <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
           <h4 className="mb-1"><TextWithLine>Lokasi Acara</TextWithLine></h4>
         </div>
         <LocationMap />
@@ -100,28 +100,29 @@ export default function Index() {
         <GalleryPhotos />
       </SectionWrapper>
 
-      <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
-          <h4 className="mb-1"><TextWithLine>Berikan Doa Terbaik Untuk Kami</TextWithLine></h4>
-        </div>
+      <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
+        <h4 className="mb-1"><TextWithLine>Berikan Doa Terbaik Untuk Kami</TextWithLine></h4>
+      </div>
       <SectionWrapper className="mb-20 bg-[#EFEFEF]">
         <Message />
       </SectionWrapper>
 
+      <div className="text-2xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
+        <h4 className="mb-1"><TextWithLine>Mohon Patuhi Protokol Kesehatan Selama Menghadiri Acara</TextWithLine></h4>
+      </div>
       <SectionWrapper className="mb-0">
         <ProtokolKesehatan />
       </SectionWrapper>
 
-      <div 
-        className="py-40 text-gray-50 relative text-center font-sans"
-        style={{textShadow: "1px 1px 1px #EFEFEF", backgroundRepeat: "no-repeat", opacity: 0.87, backgroundSize: "100%", backgroundImage: `url(${footerbg})`}}
-      >
-        © 2022 <br/> with💕by <span className="font-semibold"><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></span><br/>
-        <p style={{textShadow: "1px 1px 1px #EFEFEF" }}>
-          <a href="https://github.com/igmerwina/wedding-invitation" target="blank">👨‍💻  &nbsp;</a>
-          <a href="https://www.instagram.com/holly.lotus/" target="blank">📸 </a>
+      <div className="md:bg-contain md:object-fill"
+        style={{height:"180px", backgroundRepeat: "no-repeat", opacity: 0.87, backgroundSize: "100%", backgroundImage: `url(${footerbg})`}}>
+        <p className="text-gray-600 bg-gradient-to-r from-slate-400 font-light"
+        style={{ position:"fixed", bottom: "0", left: "100", textAlign: "center"}}>
+          © 2022 with💕 by <strong><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></strong> 
+          <a href="https://github.com/igmerwina/wedding-invitation" target="blank">&nbsp; ®👨‍💻</a>
+          <a href="https://www.instagram.com/holly.lotus/" target="blank"> ®📸 &nbsp;</a>
         </p>
       </div>
-
       <MusicPlayer play={!openWelcome} />
     </div>
   );

@@ -1,6 +1,6 @@
 import TextWithLine from "./Utils/TextWithLine";
-import bride from "~/images/erwin-img.jpg";
-import groom from "~/images/iin-img.jpg";
+import bride from "~/images/erwincp.jpg";
+import groom from "~/images/iin.jpg";
 
 const BrideAndGroom = () => {
   return (
@@ -14,7 +14,7 @@ const BrideAndGroom = () => {
             <img
               src={bride}
               alt="pengantin perempuan"
-              className="w-48 h-48 rounded-full mb-8"
+              className="w-80 h-100 rounded-full mb-8"
             />
             <h3 className="text-xl font-medium font-head mb-4 text-gray-800">
               I Gusti Made Erwin Ardiantha, M.T
@@ -36,7 +36,7 @@ const BrideAndGroom = () => {
               <img
                 src={groom}
                 alt="pengantin laki-laki"
-                className="w-48 h-48 rounded-full mb-8"
+                className="w-80 h-100 rounded-full mb-8"
               />
               <h3 className="text-xl font-medium font-head mb-4 text-gray-800">
                 Putu Ayu Indira Savitri, S.Si.Kom
@@ -48,8 +48,8 @@ const BrideAndGroom = () => {
               </div>
               <p className="font-sans text-gray-500 leading-6">
                 Putri pertama dari <br /> 
-                Bapak Ir. I Made Budiasa Astawa dan <br />
-                Ibu Ir. Putu Nuryati (alm.)
+                Bapak Ir. I Made Budiasa Astawa & <br />
+                Ibu Ir. Putu Nuryati (Almh.)
               </p>
             </div>
           </div>
