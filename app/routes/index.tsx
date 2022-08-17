@@ -9,6 +9,7 @@ import SectionWrapper from "~/components/Utils/SectionWrapper";
 import WelcomeModal from "~/components/WelcomeModal";
 import { indexAction, indexLoader } from "~/controls";
 import heroBg from "~/images/hero-bg.jpg";
+import footerbg from "~/images/footernew.jpg";
 import heroBgMobile from "~/images/hero-bg-mobiles.jpg";
 import MusicPlayer from "~/components/MusicPlayer";
 import GalleryPhotos from "~/components/GalleryPhotos";
@@ -107,9 +108,12 @@ export default function Index() {
         <ProtokolKesehatan />
       </SectionWrapper>
 
-      <div className="py-24 text-gray-700 relative text-center font-sans bg-[url('app/images/foto-3.jpg')]">
-        © 2022 with💖 from <span className="font-semibold"><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></span><br/>
-        <p className="text-xs text-gray-400"><a href="https://github.com/igmerwina/wedding-invitation" target="blank">Source</a></p>
+      <div 
+        className="py-24 text-gray-50 relative text-center font-sans"
+        style={{textShadow: "1px 1px 1px #EFEFEF", backgroundRepeat: "no-repeat", opacity: 0.87, backgroundSize: "100%", backgroundImage: `url(${footerbg})`}}
+      >
+        © 2022 <br/> with💕by <span className="font-semibold"><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></span><br/>
+        <p className="text-xs text-gray-50" style={{textShadow: "1px 1px 1px #EFEFEF" }}><a href="https://github.com/igmerwina/wedding-invitation" target="blank">Source</a></p>
       </div>
 
       <MusicPlayer play={!openWelcome} />
