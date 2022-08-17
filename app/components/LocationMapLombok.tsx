@@ -6,7 +6,7 @@ const MAP_REDIRECT_URL =
   "https://www.google.com/maps/dir//Lombok+Astoria+-+Hotel,+Jl.+Jend.+Sudirman+No.40,+Rembiga,+Selaparang,+Mataram+City,+West+Nusa+Tenggara+83124/@-8.5647062,116.1187227,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x2dcdc0b633c190d1:0x45ecf492cff9eca0!2m2!1d116.1209288!2d-8.5646417!3e0";
 const MAP_TITLE = "Hotel Lombok Astoria, Mataram";
 const MAP_ADDRESS =
-  "Jl. Jend. Sudirman No.40, Rembiga, Kec. Selaparang, Kota Mataram, Nusa Tenggara Barata, 83124";
+  "Jl. Jend. Sudirman No.40, Rembiga, Kec. Selaparang, Kota Mataram, Nusa Tenggara Barat, 83124";
 
 const LocationMapLombok = () => {
   return (

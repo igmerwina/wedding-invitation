@@ -13,6 +13,7 @@ import heroBgMobile from "~/images/hero-bg-mobiles.jpg";
 import MusicPlayer from "~/components/MusicPlayer";
 import GalleryPhotos from "~/components/GalleryPhotos";
 import LocationMapLombok from "~/components/LocationMapLombok";
+import ProtokolKesehatan from "~/components/Protokol";
 
 export const loader = indexLoader;
 export const action = indexAction;
@@ -86,7 +87,7 @@ export default function Index() {
         <h4 className="mb-1">Lokasi Acara</h4>
       </div>
 
-      <SectionWrapper className="mb-24">
+      <SectionWrapper className="mb-24 pt-1">
         <LocationMap />
       </SectionWrapper>
       
@@ -102,8 +103,12 @@ export default function Index() {
         <Message />
       </SectionWrapper>
 
-      <div className="py-24 bg-[#EFEFEF] text-gray-700 relative text-center font-sans">
-        © 2022 by <span className="font-semibold"><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></span><br/>
+      <SectionWrapper className="mb-36">
+        <ProtokolKesehatan />
+      </SectionWrapper>
+
+      <div className="py-24 text-gray-700 relative text-center font-sans bg-[url('app/images/foto-3.jpg')]">
+        © 2022 with💖 from <span className="font-semibold"><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></span><br/>
         <p className="text-xs text-gray-400"><a href="https://github.com/igmerwina/wedding-invitation" target="blank">Source</a></p>
       </div>
 
