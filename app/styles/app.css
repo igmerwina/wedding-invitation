@@ -795,17 +795,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
-.border-t-2 {
-  border-top-width: 2px;
+.border-b-4 {
+  border-bottom-width: 4px;
 }
 
 .border-t {
   border-top-width: 1px;
-}
-
-.border-\[\#CE7BB0\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(206 123 176 / var(--tw-border-opacity));
 }
 
 .border-gray-400 {
@@ -841,6 +836,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#f9f9f9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-10 {
+  --tw-bg-opacity: 0.1;
+}
+
+.bg-opacity-0 {
+  --tw-bg-opacity: 0;
+}
+
+.bg-\[url\(\'\~\/images\/topflower\.png\'\)\] {
+  background-image: url('~/images/topflower.png');
+}
+
+.bg-\[url\(\'topflower\'\)\] {
+  background-image: url('topflower');
 }
 
 .bg-cover {
@@ -1014,14 +1025,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.25rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1057,11 +1060,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1077,16 +1075,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-medium {
   font-weight: 500;
 }
 
-.font-black {
-  font-weight: 900;
-}
-
 .font-semibold {
   font-weight: 600;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .font-bold {
@@ -1231,16 +1234,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 0px;
   }
 
-  .md\:mb-10 {
-    margin-bottom: 2.5rem;
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .md\:mb-16 {
     margin-bottom: 4rem;
-  }
-
-  .md\:mb-5 {
-    margin-bottom: 1.25rem;
   }
 
   .md\:mr-8 {
@@ -1267,8 +1266,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 2.75rem;
   }
 
-  .md\:h-\[750px\] {
-    height: 750px;
+  .md\:h-\[890px\] {
+    height: 890px;
+  }
+
+  .md\:h-\[800px\] {
+    height: 800px;
   }
 
   .md\:w-1\/2 {

@@ -9,7 +9,7 @@ import {
 import type { MetaFunction, LinksFunction } from "remix";
 import styles from "./styles/app.css";
 import skeletonStyles from "react-loading-skeleton/dist/skeleton.css";
-import ogimage from "~/images/ogimage.jpg";
+import ogimage from "~/images/ogimages.jpg";
 
 export const links: LinksFunction = () => {
   return [
@@ -36,22 +36,22 @@ export const links: LinksFunction = () => {
 
 export const meta: MetaFunction = () => {
   return {
-    title: "Undangan Pernikahan - Ami & Fauzi",
+    title: "Wedding Invitation of Erwin & Iin",
     description:
-      "Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu",
+      "Rabu, 12 Oktober 2022, Bali",
 
     "og:image": ogimage,
     "og:image:type": "image/jpeg",
-    "og:site_name": "amifauzi",
+    "og:site_name": "weddingerwiniin",
     "og:url": "https://www.amifauzi.com/",
-    "og:title": "Undangan Pernikahan - Ami & Fauzi",
-    "og:description": `Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu`,
+    "og:title": "Wedding Invitation of Erwin & Iin",
+    "og:description": `Rabu, 12 Oktober 2022, Bali`,
     "og:type": "website",
 
     "twitter:image": ogimage,
     "twitter:card": "summary_large_image",
     "twitter:description":
-      "Sabtu, 30 Juli 2022 di Taman Mini Perumnas Batu Galing, Bengkulu",
+      "Rabu, 12 Oktober 2022, Bali",
   };
 };
 

@@ -1,18 +1,21 @@
+import TextWithLine from "./Utils/TextWithLine";
+import bride from "~/images/erwin-img.jpg";
+
 const CALENDAR_URL = `https://www.google.com/calendar/render?
 action=TEMPLATE&
-text=Pernikahan+Ami+%26+Fauzi+%F0%9F%92%8C&
-location=Taman%20Mini%20Perumnas%20Batu%20Galing%2C%20Jl.%20Batu%20Galing%20No.60%2C%20Talang%20Rimbo%20Lama%2C%20Kec.%20Curup%20Tengah%2C%20Kabupaten%20Rejang%20Lebong%2C%20Bengkulu%2039119%2C%20Indonesia&
-details=Dengan%20segala%20kerendahan%20hati%20dan%20sukacita%2C%20kami%20menyampaikan%20kabar%20bahagia%20mengenai%20pernikahan%20kami%3A%20Rossiani%20Hutami%20dan%20Fauzi%20Al%20Aziz.%0A%0ATautan%20undangan%3A%0Ahttps%3A%2F%2Fwww.amifauzi.com%2F%0A%0AMerupakan%20kebahagiaan%20bagi%20kami%20jika%20Bapak%2FIbu%2FSaudara%2Fi%20turut%20hadir%20dalam%20acara%20resepsi%20kami%20dan%2Fatau%20berkenan%20memberikan%20doa%20restu%20pada%20tautan%20di%20atas.%0A%0AAtas%20perhatiannya%2C%20kami%20ucapkan%20terima%20kasih.%0A%0AYang%20berbahagia%2C%0AAmi%20%26%20Fauzi&
-dates=20220730T010000Z%2F20220730T080000Z`;
+text=Pernikahan+Erwin+%26+Iin+%F0%9F%92%8C&
+location=Dusun Cacab - Jangkahan. Desa biaung. Kecamatan Penebel. Tabanan&
+details=Dengan segala kerendahan hati dan sukacita%2C kami menyampaikan kabar bahagia mengenai pernikahan kami%3A I Gusti Made Erwin A dan Putu Ayu Indira Savitri.%0A%0ATautan undangan%3A%0Ahttps%3A%2F%2Fwww.igmerwina.github.io/weddingerwiniin%2F%0A%0AMerupakan sebuah kebahagiaan bagi kami jika Bapak%2FIbu%2FSaudara%2Fi turut hadir dalam acara resepsi kami dan%2Fatau berkenan memberikan doa restu.%0A%0AAtas perhatiannya%2C kami ucapkan terima kasih.%0A%0AYang berbahagia%2C%0AErwin %26 Iin&
+dates=20221013T010000Z%2F20220730T080000Z`;
 
 const Agendas = () => {
   return (
     <div className="max-w-3xl mx-auto text-center">
       <div className="mb-4 text-gray-500 font-head md:text-lg font-medium">
-        Pernikahan kami akan dilaksanakan pada:
+        Resepsi pernikahan kami akan dilaksanakan pada:
       </div>
-      <h3 className="text-3xl md:text-4xl font-black mb-6 text-cente text-gray-700 font-sans">
-        SABTU, 30 JULI 2022
+      <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-sans">
+        Kamis, 13 Oktober 2022
       </h3>
       <div className="px-12 flex max-w-md mx-auto mb-10">
         <a
@@ -24,21 +27,46 @@ const Agendas = () => {
         </a>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl font-black">
-        <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
-          AKAD NIKAH
-        </div>
-        <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
-          08.00 WIB
-        </div>
+      <div className="mb-12 text-gray-500 font-head md:text-2xl font-medium mt-20">
+          <TextWithLine>Rangkaian Acara</TextWithLine>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 text-center text-2xl px-4 py-8 md:py-16 md:px-0 md:text-3xl  font-black">
-        <div className="col-span-1 text-gray-400 text-left md:text-center font-sans">
-          RESEPSI
+      <div className="container mx-auto pt-2">
+        <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+          <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Upacara Pawiwahan</h2>
+            <p className="leading-relaxed text-base">Rangkaian Prosesi Pernikahan <br/> dilaksanakan dalam adat Hindu Bali</p>
+          </div>
         </div>
-        <div className="col-span-1 text-gray-700 text-right md:text-center font-sans">
-          11.00 WIB
+
+        <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+          <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Resepsi I</h2>
+            <p className="leading-relaxed text-base">Mengundang rekan/keluarga untuk bersama merayakan momen bahagia kami di Bali</p>
+          </div>
+        </div>
+        
+        <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+          <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Resepsi II</h2>
+            <p className="leading-relaxed text-base">Mengundang rekan/keluarga untuk bersama merayakan momen bahagia kami di Lombok</p>
+          </div>
         </div>
       </div>
     </div>

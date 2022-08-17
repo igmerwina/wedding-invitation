@@ -1,15 +1,16 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import foto1 from "~/images/foto1.jpg";
-import foto2 from "~/images/foto2.jpg";
-import foto3 from "~/images/foto3.jpg";
-import foto4 from "~/images/foto4.jpg";
-import foto5 from "~/images/foto5.jpg";
-import foto6 from "~/images/foto6.jpg";
-import foto7 from "~/images/foto7.jpg";
-import foto8 from "~/images/foto8.jpg";
-import foto9 from "~/images/foto9.jpg";
+import foto1 from "~/images/foto-1.jpg";
+import foto2 from "~/images/foto-2.jpg";
+import foto3 from "~/images/foto-3.jpg";
+import foto4 from "~/images/foto-4.jpg";
+import foto5 from "~/images/foto-5.jpg";
+import foto6 from "~/images/foto-6.jpg";
+import foto7 from "~/images/foto-7.jpg";
+import foto8 from "~/images/foto-8.jpg";
+import foto9 from "~/images/foto-9.jpg";
+import TextWithLine from "./Utils/TextWithLine";
 
 const photos = [
   {
@@ -84,7 +85,7 @@ const GalleryPhotos = () => {
   return (
     <div className="w-full px-1 md:px-4">
       <h4 className="text-3xl font-head font-bold text-center mb-14 pt-10 text-gray-700">
-        Galeri
+      <TextWithLine><strong>Galeri</strong></TextWithLine>
       </h4>
       {isHydrated ? (
         <div className="w-full overflow-auto">
@@ -93,8 +94,6 @@ const GalleryPhotos = () => {
             {viewerIsOpen ? (
               <Modal onClose={closeLightbox}>
                 <Carousel
-                  styles={{}}
-                  currentIndex={currentImage}
                   views={photos.map((x) => ({
                     source: x.src,
                   }))}
