@@ -41,6 +41,7 @@ const Agendas = () => {
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Upacara Pawiwahan</h2>
             <p className="leading-relaxed text-base">Rangkaian Prosesi Pernikahan <br/> dilaksanakan dalam adat Hindu Bali</p>
+            <p className="leading-relaxed text-base">12 Oktober 2022</p>
           </div>
         </div>
 
@@ -53,6 +54,7 @@ const Agendas = () => {
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Resepsi I</h2>
             <p className="leading-relaxed text-base">Mengundang rekan/keluarga untuk bersama merayakan momen bahagia kami di Bali</p>
+            <p className="leading-relaxed text-base font-bold pt-2">Kamis, 13 Oktober 2022</p>
           </div>
         </div>
         
@@ -66,6 +68,7 @@ const Agendas = () => {
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Resepsi II</h2>
             <p className="leading-relaxed text-base">Mengundang rekan/keluarga untuk bersama merayakan momen bahagia kami di Lombok</p>
+            <p className="leading-relaxed text-base font-bold pt-2">Minggu, 20 November 2022</p>
           </div>
         </div>
       </div>

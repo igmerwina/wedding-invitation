@@ -68,7 +68,7 @@ export default function Index() {
             className="text-left font-head text-md text-[#EFEFEF]"
             style={{ textShadow: "1px 1px 1px #CE7BB0" }}
           >
-            12 October 2022
+            Kamis, 13 Oktober 2022
           </div>
         </div>
       </div>
