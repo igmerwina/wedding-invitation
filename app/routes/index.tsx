@@ -91,7 +91,7 @@ export default function Index() {
         </div>
         <LocationMap />
       </SectionWrapper>
-      
+
       <SectionWrapper className="mb-20">
         <LocationMapLombok />
       </SectionWrapper>
@@ -114,15 +114,14 @@ export default function Index() {
         <ProtokolKesehatan />
       </SectionWrapper>
 
-      <div className="md:bg-contain md:object-fill"
-        style={{height:"180px", backgroundRepeat: "no-repeat", opacity: 0.87, backgroundSize: "100%", backgroundImage: `url(${footerbg})`}}>
-        <p className="text-gray-600 bg-gradient-to-r from-slate-400 font-light"
-        style={{ position:"fixed", bottom: "0", left: "100", textAlign: "center"}}>
-          © 2022 with💕 by <strong><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></strong> 
+      <footer style={{ height: "200px", position:"relative", backgroundRepeat: "no-repeat", opacity: 0.87, backgroundSize: "100%", backgroundImage: `url(${footerbg})` }}>
+        <p className="text-gray-600 bottom-0 absolute text-right bg-gradient-to-r from-slate-400 font-light">
+          © 2022 with💕 by <strong><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></strong>
           <a href="https://github.com/igmerwina/wedding-invitation" target="blank">&nbsp; ®👨‍💻</a>
+          <a href="https://youtu.be/M-iIFo6wJ_w" target="blank"> ®🎶 </a>
           <a href="https://www.instagram.com/holly.lotus/" target="blank"> ®📸 &nbsp;</a>
         </p>
-      </div>
+      </footer>
       <MusicPlayer play={!openWelcome} />
     </div>
   );

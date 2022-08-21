@@ -28,7 +28,7 @@ const MusicPlayer = ({ play: playParent }: MusicPlayerProps) => {
   return (
     <Fragment>
       <audio controls ref={audio} loop hidden>
-        <source src={"/wedding.mp3"} type="audio/mp3" />
+        <source src={"/weddingtheme.mp3"} type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
 
