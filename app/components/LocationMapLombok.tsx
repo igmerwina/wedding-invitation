@@ -39,7 +39,7 @@ const LocationMapLombok = () => {
               </h4>
               <p className="mb-16 md:mb-5 font-sans">{MAP_ADDRESS}</p>
               <p className="mb-1 font-sans font-bold">Minggu, 20 November 2022</p>
-              <p className="mb-5 font-sans font-semibold text-sm">11.30 - 14.00 WITA</p>
+              <p className="mb-5 font-sans font-semibold text-sm">🕰 11.30 - 14.00 WITA</p>
               <div className="flex md:justify-start justify-center">
                 <a
                   href={MAP_REDIRECT_URL}
