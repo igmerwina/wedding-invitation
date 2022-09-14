@@ -7,7 +7,7 @@ import LocationMap from "~/components/LocationMap";
 import Message from "~/components/Massage";
 import SectionWrapper from "~/components/Utils/SectionWrapper";
 import WelcomeModal from "~/components/WelcomeModal";
-import { indexAction, indexLoader } from "~/controls";
+import { indexAction, indexLoader, LoaderDataType } from "~/controls";
 import heroBg from "~/images/hero-bg.jpg";
 import footerbg from "~/images/footernew.jpg";
 import heroBgMobile from "~/images/hero-bg-mobiles.jpg";
@@ -16,6 +16,7 @@ import GalleryPhotos from "~/components/GalleryPhotos";
 import LocationMapLombok from "~/components/LocationMapLombok";
 import ProtokolKesehatan from "~/components/Protokol";
 import TextWithLine from "~/components/Utils/TextWithLine";
+import { useLoaderData } from "remix";
 
 export const loader = indexLoader;
 export const action = indexAction;
@@ -39,6 +40,8 @@ export default function Index() {
   useEffect(() => {
     setIsMobile(isSmallScreen);
   }, [isSmallScreen]);
+
+  const { isBoth: isBoth } = useLoaderData<LoaderDataType>();
 
   return (
     <div
@@ -85,16 +88,28 @@ export default function Index() {
         <Agendas />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-10 pt-1">
-        <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
-          <h4 className="mb-1"><TextWithLine>Lokasi Acara</TextWithLine></h4>
-        </div>
-        <LocationMap />
-      </SectionWrapper>
+      {isBoth === '1' ? (
+        <div>
+          <SectionWrapper className="mb-10 pt-1">
+            <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
+              <h4 className="mb-1"><TextWithLine>Lokasi Acara</TextWithLine></h4>
+            </div>
+            <LocationMap />
+          </SectionWrapper>
 
-      <SectionWrapper className="mb-20">
-        <LocationMapLombok />
-      </SectionWrapper>
+          <SectionWrapper className="mb-20">
+            <LocationMapLombok />
+          </SectionWrapper>
+        </div>
+      ) : (
+        <SectionWrapper className="mb-10 pt-1">
+          <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
+            <h4 className="mb-1"><TextWithLine>Lokasi Acara</TextWithLine></h4>
+          </div>
+          <LocationMap />
+        </SectionWrapper>
+      )}
+
 
       <SectionWrapper className="mb-20">
         <GalleryPhotos />
@@ -114,7 +129,7 @@ export default function Index() {
         <ProtokolKesehatan />
       </SectionWrapper>
 
-      <footer style={{ height: "200px", position:"relative", backgroundRepeat: "no-repeat", opacity: 0.87, backgroundSize: "100%", backgroundImage: `url(${footerbg})` }}>
+      <footer style={{ height: "200px", position: "relative", backgroundRepeat: "no-repeat", opacity: 0.87, backgroundSize: "100%", backgroundImage: `url(${footerbg})` }}>
         <p className="text-gray-600 bottom-0 absolute text-right bg-gradient-to-r from-slate-400 font-light">
           © 2022 with💕 by <strong><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></strong>
           <a href="https://github.com/igmerwina/wedding-invitation" target="blank">&nbsp; ®👨‍💻</a>

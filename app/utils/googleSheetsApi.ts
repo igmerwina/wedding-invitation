@@ -57,6 +57,33 @@ export const getPersonRemarks = async (name?: string) => {
   }
 };
 
+export const getBothLocation = async (name?: string) => {
+  console.log("getBothLocation ")
+  if (!name) return undefined;
+
+  try {
+    const sheets = await getSheets();
+    const range = `Sheet1!A:C`;
+
+    const response = await sheets.spreadsheets.values.get({
+      spreadsheetId: process.env.SHEET_ID,
+      range,
+    });
+
+    const dataRaw = response.data.values;
+    const data =
+      dataRaw?.map((data: string[]) => ({ name: data[0], isBoth: data[2] })) ??
+      [];
+    const regex = new RegExp(`${name}$`, "i");
+    const result = data.find((person) => regex.test(person.name));
+
+    return result;
+  } catch (err) {
+    console.error(err);
+    return undefined;
+  }
+};
+
 export const appendMessage = async (name: string, message: string) => {
   try {
     const sheets = await getSheets();

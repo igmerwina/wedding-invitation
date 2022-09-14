@@ -1,3 +1,5 @@
+import { useLoaderData } from "remix";
+import { LoaderDataType } from "~/controls";
 import SectionWrapper from "./Utils/SectionWrapper";
 
 const MAP_EMBEDED_URL =
@@ -9,6 +11,10 @@ const MAP_ADDRESS =
   "Dusun Cacab - Jangkahan. Desa biaung. Kecamatan Penebel, Kabupaten Tabanan, Bali, 82152";
 
 const LocationMap = () => {
+  const { isBoth: isBoth } = useLoaderData<LoaderDataType>();
+  let title = 'Resepsi Pernikahan';
+  isBoth === '1' ? title = 'Resepsi I' : title
+
   return (
     <div className="py-10 bg-[#EFEFEF]">
       <SectionWrapper>
@@ -32,7 +38,7 @@ const LocationMap = () => {
           <div className="md:w-1/2 w-full px-4 mb-6 md:mb-0">
             <div className="sticky top-8 text-center md:text-left">
               <h3 className="text-2xl font-head mb-3 font-semibold text-gray-700">
-                Resepsi I
+                {title}
               </h3>
               <h4 className="text-xl md:text-xl mb-4 font-sans text-gray-700">
                 {MAP_TITLE}
