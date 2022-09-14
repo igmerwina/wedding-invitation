@@ -1,6 +1,8 @@
 import TextWithLine from "./Utils/TextWithLine";
 import cincin from "~/images/tukar-cincin.jpg";
 import stage from "~/images/stage.jpg";
+import { useLoaderData } from "remix";
+import { LoaderDataType } from "~/controls";
 
 const CALENDAR_URL = `https://www.google.com/calendar/render?
 action=TEMPLATE&
@@ -10,42 +12,41 @@ details=Dengan segala kerendahan hati dan sukacita%2C kami menyampaikan kabar ba
 dates=20221013T010000Z%2F20220730T080000Z`;
 
 const Agendas = () => {
+  const { isBoth: isBoth } = useLoaderData<LoaderDataType>();
+
   return (
     <div className="max-w-3xl mx-auto text-center">
       <div className="mb-4 text-gray-500 font-head md:text-lg font-medium">
         Resepsi pernikahan kami akan dilaksanakan pada:
       </div>
-      <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-sans">
-        Kamis, 13 Oktober 2022
-      </h3>
-      <div className="px-12 flex max-w-md mx-auto mb-10">
-        <a
-          href={CALENDAR_URL}
-          target={"_blank"}
-          className="px-8 py-4 transition-all text-lg font-semibold w-full rounded-lg bg-[#CE7BB0] hover:bg-[#A267AC] outline-[#6867AC] text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
-        >
-          Simpan di Kalender
-        </a>
-      </div>
+      {isBoth === '1' ? (
+        <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-sans">
+          Kamis, 13 Oktober 2022 <br /> <TextWithLine>&</TextWithLine> Minggu, 20 November 2022
+        </h3>
+      ) : (
+        <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-sans">
+          Kamis, 13 Oktober 2022
+        </h3>)
+      }
 
       <div className="mb-12 text-gray-500 font-head md:text-2xl font-medium mt-20">
-          <TextWithLine>Rangkaian Acara</TextWithLine>
+        <TextWithLine>Rangkaian Acara</TextWithLine>
       </div>
 
       <div className="container mx-auto pt-2">
         <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
           <div className="sm:w-32 sm:h-32 h-32 w-32 sm:mr-10 inline-flex items-center justify-center rounded-full flex-shrink-0 bg-center bg-cover"
-            style={{ backgroundImage: `url(${ cincin })` }} >
+            style={{ backgroundImage: `url(${cincin})` }} >
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 className="text-gray-900 text-lg title-font mb-2 font-bold">Upacara Pawiwahan</h2>
-            <p className="leading-relaxed text-base">Rangkaian Prosesi Pernikahan <br/> dilaksanakan dalam adat Hindu Bali</p>
+            <p className="leading-relaxed text-base">Rangkaian Prosesi Pernikahan <br /> dilaksanakan dalam adat Hindu Bali</p>
           </div>
         </div>
 
         <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
           <div className="sm:w-32 sm:h-32 h-32 w-32 sm:mr-10 inline-flex items-center justify-center rounded-full flex-shrink-0 bg-center bg-cover"
-           style={{ backgroundImage: `url(${ stage })` }} >
+            style={{ backgroundImage: `url(${stage})` }} >
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 className="text-gray-900 text-lg title-font mb-2 font-bold">Resepsi</h2>
