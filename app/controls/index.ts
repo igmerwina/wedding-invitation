@@ -4,9 +4,11 @@ import {
   getMessage,
   getPersonRemarks,
   MessageItemType,
+  getBothLocation,
 } from "~/utils/googleSheetsApi";
 
 export interface LoaderDataType {
+  isBoth: string;
   remark: string;
   messages: MessageItemType[];
 }
@@ -15,12 +17,14 @@ export const indexLoader: LoaderFunction = async ({ request }) => {
   const url = new URL(request.url);
   const recipient = url.searchParams.get("to") || "";
 
-  const [recipientRemarks, messages] = await Promise.all([
+  const [bothLocation, recipientRemarks, messages] = await Promise.all([
+    getBothLocation(recipient),
     getPersonRemarks(recipient),
     getMessage(),
   ]);
 
   return json<LoaderDataType>({
+    isBoth: bothLocation?.isBoth || recipient,
     remark: recipientRemarks?.remarks || recipient,
     messages,
   });

@@ -23,7 +23,7 @@ const BrideAndGroom = () => {
               <TextWithLine>Pengantin Pria</TextWithLine>
             </div>
             <p className="font-sans text-gray-500 leading-6">
-              Putra pertama dari <br/>
+              Putra kedua dari <br/>
               Bapak dr. Winangun Sp.PD & <br/>
               Ibu Dra. Ni Made Citra Resmi, M.M
             </p>

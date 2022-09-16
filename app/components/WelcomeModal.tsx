@@ -20,9 +20,10 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
       }
     >
       <div className="bg-[#EFEFEF] h-screen w-screen flex flex-row justify-center items-start fixed overflow-auto py-20 box-border">
-        <div className="flex flex-col items-center p-5 my-auto w-full md:w-[500]"
-        style={{ backgroundImage: `url(${ topflower })` }} >
-          <h5 className="text-center font-medium font-sans text-xl md:text-2xl mb-2 md:mb-3 text-gray-500">
+        <div className="flex flex-col items-center p-5 bg-no-repeat bg-center bg-contain my-auto w-full md:w-[500]"
+          style={{ backgroundImage: `url(${ topflower })` }} >
+          <h5 className="text-center font-medium font-sans text-xl md:text-2xl mb-2 md:mb-3 text-gray-600"
+            style={{ textShadow: "3px 3px 2px #EFEFEF" }} >
             The Wedding Invitation of
           </h5>
           <h4 className="text-center font-head text-5xl md:text-6xl mb-6 text-gray-800"
@@ -33,14 +34,14 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
           <div className="w-[350px] mb-12">
             {!recipient ? null : (
               <Fragment>
-                <div className="mb-5">
+                <div className="mb-1 font-bold">
                   <TextWithLine>To</TextWithLine>
                 </div>
                 <div
                   className={
                     recipient.length < 50
-                      ? "text-center font-sans text-gray-700 leading-7 text-lg py-1"
-                      : "text-center font-sans text-gray-700 leading-7 px-4 md:px-0"
+                      ? "font-medium text-center font-sans bg-[#000] rounded-lg bg-opacity-40 text-white leading-7 text-lg py-3"
+                      : "font-medium text-center font-sans bg-[#000] rounded-lg bg-opacity-40 text-white leading-7 px-4 md:px-0"
                   }
                 >
                   {recipient}

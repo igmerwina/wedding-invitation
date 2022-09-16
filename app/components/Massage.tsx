@@ -67,7 +67,7 @@ const Message = memo(() => {
                 placeholder="Doa/Ucapan bagi kami"
                 name="message"
                 required
-                maxLength={750}
+                maxLength={200}
               />
               <div className="flex justify-end">
                 <button
@@ -103,10 +103,10 @@ const Message = memo(() => {
 
           {messagesDisplay.map((message, i) => (
             <div className="mb-7 mt-8 md:mb-5" key={i}>
-              <h5 className="font-black font-sans text-gray-700 mb-1">
-                {message.name}
+              <h5 className="font-semibold font-sans text-gray-700 mb-1">
+                📩 {message.name}
               </h5>
-              <p className="whitespace-pre-wrap font-sans text-gray-800 leading-6 border-b-4 px-3 py-1.5">
+              <p className="whitespace-pre-wrap font-sans text-gray-800 leading-6 border-b-2 pl-6 py-1.5">
                 {message.message}
               </p>
             </div>
