@@ -58,7 +58,6 @@ export const getPersonRemarks = async (name?: string) => {
 };
 
 export const getBothLocation = async (name?: string) => {
-  console.log("getBothLocation ")
   if (!name) return undefined;
 
   try {
