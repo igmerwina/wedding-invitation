@@ -40,7 +40,10 @@ const Agendas = () => {
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 className="text-gray-900 text-lg title-font mb-2 font-bold">Upacara Pawiwahan</h2>
-            <p className="leading-relaxed text-base">Rangkaian Prosesi Pernikahan <br /> dilaksanakan dalam adat Hindu Bali</p>
+            <p className="leading-relaxed text-base">Rangkaian Prosesi Pernikahan <br /> 
+              dilaksanakan dalam adat Hindu Bali. <br /> 
+              Tanggal 12 Oktober 2022
+            </p>
           </div>
         </div>
 
@@ -50,7 +53,12 @@ const Agendas = () => {
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 className="text-gray-900 text-lg title-font mb-2 font-bold">Resepsi</h2>
-            <p className="leading-relaxed text-base">Mengundang keluarga dan teman-teman semua untuk bersama merayakan momen bahagia kami</p>
+            <p className="leading-relaxed text-base">Mengundang keluarga dan teman-teman semua untuk bersama merayakan momen bahagia kami.</p>
+            {isBoth === '1' ? ( 
+              <p> Tanggal 13 Oktober 2022 & 20 November 2022 </p>
+            ) : (
+              <p> Tanggal 13 Oktober 2022 </p>
+            )}
           </div>
         </div>
       </div>
