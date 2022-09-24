@@ -15,6 +15,7 @@ import MusicPlayer from "~/components/MusicPlayer";
 import GalleryPhotos from "~/components/GalleryPhotos";
 import LocationMapLombok from "~/components/LocationMapLombok";
 import ProtokolKesehatan from "~/components/Protokol";
+import OpeningMessage from "~/components/OpeningMessage";
 import TextWithLine from "~/components/Utils/TextWithLine";
 import { useLoaderData } from "remix";
 
@@ -76,12 +77,12 @@ export default function Index() {
         </div>
       </div>
 
-      <SectionWrapper className="bg-[#EFEFEF]">
-        <BrideAndGroom />
+      <SectionWrapper>
+        <OpeningMessage />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-10">
-        <Countdown />
+      <SectionWrapper className="bg-[#EFEFEF]">
+        <BrideAndGroom />
       </SectionWrapper>
 
       <SectionWrapper className="mb-20">
@@ -110,9 +111,12 @@ export default function Index() {
         </SectionWrapper>
       )}
 
-
       <SectionWrapper className="mb-20">
         <GalleryPhotos />
+      </SectionWrapper>
+
+      <SectionWrapper className="mb-10">
+        <Countdown />
       </SectionWrapper>
 
       <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
