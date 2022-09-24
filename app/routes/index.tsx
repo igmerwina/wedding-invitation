@@ -18,6 +18,7 @@ import ProtokolKesehatan from "~/components/Protokol";
 import OpeningMessage from "~/components/OpeningMessage";
 import TextWithLine from "~/components/Utils/TextWithLine";
 import { useLoaderData } from "remix";
+import Footer from "~/components/Footer";
 
 export const loader = indexLoader;
 export const action = indexAction;
@@ -119,9 +120,6 @@ export default function Index() {
         <Countdown />
       </SectionWrapper>
 
-      <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
-        <h4 className="mb-1"><TextWithLine>Berikan Doa Terbaik Untuk Kami</TextWithLine></h4>
-      </div>
       <SectionWrapper className="mb-20 bg-[#EFEFEF]">
         <Message />
       </SectionWrapper>
@@ -133,14 +131,8 @@ export default function Index() {
         <ProtokolKesehatan />
       </SectionWrapper>
 
-      <footer style={{ height: "200px", position: "relative", backgroundRepeat: "no-repeat", opacity: 0.87, backgroundSize: "100%", backgroundImage: `url(${footerbg})` }}>
-        <p className="text-gray-600 bottom-0 absolute text-right bg-gradient-to-r from-slate-400 font-light">
-          © 2022 with💕 by <strong><a href="https://instagram.com/igmerwina" target="blank">Erwin</a></strong>
-          <a href="https://github.com/igmerwina/wedding-invitation" target="blank">&nbsp; ®👨‍💻</a>
-          <a href="https://youtu.be/M-iIFo6wJ_w" target="blank"> ®🎶 </a>
-          <a href="https://www.instagram.com/holly.lotus/" target="blank"> ®📸 &nbsp;</a>
-        </p>
-      </footer>
+      <Footer />
+      
       <MusicPlayer play={!openWelcome} />
     </div>
   );
