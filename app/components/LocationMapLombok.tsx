@@ -4,9 +4,9 @@ const MAP_EMBEDED_URL =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.325088140063!2d116.11872271538942!3d-8.564706189243113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc0b633c190d1%3A0x45ecf492cff9eca0!2sLombok%20Astoria%20-%20Hotel!5e0!3m2!1sen!2sid!4v1659887839160!5m2!1sen!2sid";
 const MAP_REDIRECT_URL =
   "https://www.google.com/maps/dir//Lombok+Astoria+-+Hotel,+Jl.+Jend.+Sudirman+No.40,+Rembiga,+Selaparang,+Mataram+City,+West+Nusa+Tenggara+83124/@-8.5647062,116.1187227,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x2dcdc0b633c190d1:0x45ecf492cff9eca0!2m2!1d116.1209288!2d-8.5646417!3e0";
-const MAP_TITLE = "Hotel Lombok Astoria, Mataram";
+const MAP_TITLE = "Ballroom Mandalika - Lombok Astoria, Mataram";
 const MAP_ADDRESS =
-  "Jl. Jend. Sudirman No.40, Rembiga, Kec. Selaparang, Kota Mataram, Nusa Tenggara Barat, 83124";
+  "Jl. Jend. Sudirman No.40, Rembiga, Kec. Selaparang, Kota Mataram, Nusa Tenggara Barat";
 
 const LocationMapLombok = () => {
   return (
