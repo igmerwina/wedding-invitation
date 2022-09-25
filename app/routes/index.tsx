@@ -119,13 +119,10 @@ export default function Index() {
         <Countdown />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-20 bg-[#EFEFEF]">
+      <SectionWrapper className="mb-10 bg-[#EFEFEF]">
         <Message />
       </SectionWrapper>
 
-      <div className="text-2xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
-        <h4 className="mb-1"><TextWithLine>Mohon Patuhi Protokol Kesehatan Selama Menghadiri Acara</TextWithLine></h4>
-      </div>
       <SectionWrapper className="mb-0">
         <ProtokolKesehatan />
       </SectionWrapper>

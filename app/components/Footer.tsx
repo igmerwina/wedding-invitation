@@ -10,8 +10,8 @@ const Footer = () => {
   }, [isSmallScreen]);
 
   return (
-    <div className="pt-10">
-      <h3 className="text-2xl sm:text-3xl text-center font-sans pt-5 font-bold bg-[#EFEFEF] text-gray-700">
+    <div className="pt-14">
+      <h3 className="text-2xl sm:text-3xl text-center font-sans pt-7 font-bold bg-[#EFEFEF] text-gray-700">
         <TextWithLine>Terima Kasih</TextWithLine>
       </h3>
 
