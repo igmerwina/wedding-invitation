@@ -9,7 +9,6 @@ import SectionWrapper from "~/components/Utils/SectionWrapper";
 import WelcomeModal from "~/components/WelcomeModal";
 import { indexAction, indexLoader, LoaderDataType } from "~/controls";
 import heroBg from "~/images/hero-bg.jpg";
-import footerbg from "~/images/footernew.jpg";
 import heroBgMobile from "~/images/hero-bg-mobiles.jpg";
 import MusicPlayer from "~/components/MusicPlayer";
 import GalleryPhotos from "~/components/GalleryPhotos";
