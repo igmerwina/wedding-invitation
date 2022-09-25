@@ -112,7 +112,7 @@ const GalleryPhotos = () => {
   return (
     <div className="w-full px-1 md:px-4">
       <div className="text-3xl font-head font-bold text-center mb-14 pt-10 text-gray-700">
-        <h4 className="mb-1"><TextWithLine>Our Galeri</TextWithLine></h4>
+        <h4 className="mb-1"><TextWithLine>Momen Bahagia Kami</TextWithLine></h4>
       </div>
       {isHydrated ? (
         <div className="w-full overflow-auto">

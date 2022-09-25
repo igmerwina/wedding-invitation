@@ -5,49 +5,38 @@ import jarak from "~/images/prokes/socialdistancing.jpg";
 
 const Protokol = () => {
   return (
-    <div className="pt-5 items-center w-full">
-      <div className="w-full flex">
-        <div className="w-1/3 px-2">
-          <div className="flex flex-col items-center py-14 sm:px-8 text-center">
-            <img
-              src={masker}
-              alt="Jaga jarak"
-              className="md:w-48 md:h-48 rounded-full mb-8"
-            />
-            <div className="mb-4">
-              <TextWithLine>Memakai Masker</TextWithLine>
-            </div>
+    <div>
+      <div className="text-2xl font-head font-bold text-center mb-20 pt-5 text-gray-700 px-2">
+        <h4 className="mb-1"><TextWithLine>Mohon Patuhi Protokol Kesehatan Selama Menghadiri Acara</TextWithLine></h4>
+      </div>
+      <div className="grid grid-cols-3 gap-1 content-center">
+        <div className="m-auto">
+          <div className="sm:w-32 sm:h-32 h-24 w-24 rounded-full bg-center bg-cover mb-2"
+            style={{ backgroundImage: `url(${masker})` }} >
+          </div>
+          <div className="mb-4">
+            <p className="leading-relaxed text-center text-xs sm:text-sm">Memakai Masker</p>
           </div>
         </div>
-
-        <div className="w-1/3 px-2">
-          <div className="flex flex-col items-center py-14 sm:px-8 text-center">
-            <img
-              src={cucitgn}
-              alt="Mencuci Tangan"
-              className="md:w-48 md:h-48 rounded-full mb-8"
-            />
-            <div className="mb-4">
-              <TextWithLine>Mencuci tangan atau<br/>memakai Hand Sanitizer</TextWithLine>
-            </div>
+        <div className="m-auto items-center">
+          <div className="sm:w-32 sm:h-32 h-24 w-24 rounded-full bg-center bg-cover mb-2"
+            style={{ backgroundImage: `url(${cucitgn})` }} >
+          </div>
+          <div className="mb-4 content-center">
+            <p className="leading-relaxed text-center text-xs sm:text-sm">Mencuci tangan</p>
           </div>
         </div>
-
-        <div className="w-1/3 px-2">
-          <div className="flex flex-col items-center py-14 sm:px-8 text-center">
-            <img
-              src={jarak}
-              alt="Menjaga Jarak"
-              className="md:w-48 md:h-48 rounded-full mb-8"
-            />
-            <div className="mb-4">
-              <TextWithLine>Menjaga Jarak</TextWithLine>
-            </div>
+        <div className="m-auto items-center">
+          <div className="sm:w-32 sm:h-32 h-24 w-24 rounded-full bg-center bg-cover mb-2"
+            style={{ backgroundImage: `url(${jarak})` }} >
+          </div>
+          <div className="mb-4 content-center">
+            <p className="leading-relaxed text-center text-xs sm:text-sm">Menjaga Jarak</p>
           </div>
         </div>
-        
       </div>
     </div>
+
   );
 };
 

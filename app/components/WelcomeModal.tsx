@@ -34,8 +34,8 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
           <div className="w-[350px] mb-12">
             {!recipient ? null : (
               <Fragment>
-                <div className="mb-1 font-bold">
-                  <TextWithLine>To</TextWithLine>
+                <div className="mb-1 font-bold" style={{ textShadow: "2px 2px 2px #EFEFEF" }}>
+                  <TextWithLine>Kepada</TextWithLine>
                 </div>
                 <div
                   className={

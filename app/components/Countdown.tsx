@@ -49,7 +49,7 @@ const Countdown = memo(() => {
         <TextWithLine>Hitung Mundur Hari Bahagia Kami</TextWithLine>
       </div>
 
-      <div className="flex justify-center pb-20">
+      <div className="flex justify-center pb-10">
         <NumberCard number={countdown.days} label="Hari" />
         <NumberCard number={countdown.hours} label="Jam" />
         <NumberCard number={countdown.minutes} label="Menit" />

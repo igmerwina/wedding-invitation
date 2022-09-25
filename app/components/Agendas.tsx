@@ -15,21 +15,21 @@ const Agendas = () => {
   const { isBoth: isBoth } = useLoaderData<LoaderDataType>();
 
   return (
-    <div className="max-w-3xl mx-auto text-center">
+    <div className="max-w-3xl mx-auto text-center mt-10">
       <div className="mb-4 text-gray-500 font-head md:text-lg font-medium">
         Resepsi pernikahan kami akan dilaksanakan pada:
       </div>
       {isBoth === '1' ? (
-        <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-sans">
+        <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-head">
           Kamis, 13 Oktober 2022 <br /> <TextWithLine>&</TextWithLine> Minggu, 20 November 2022
         </h3>
       ) : (
-        <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-sans">
+        <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-head">
           Kamis, 13 Oktober 2022
         </h3>)
       }
 
-      <div className="mb-12 text-gray-500 font-head md:text-2xl font-medium mt-20">
+      <div className="mb-12 text-gray-500 font-head md:text-2xl font-medium mt-16">
         <TextWithLine>Rangkaian Acara</TextWithLine>
       </div>
 
@@ -40,7 +40,10 @@ const Agendas = () => {
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 className="text-gray-900 text-lg title-font mb-2 font-bold">Upacara Pawiwahan</h2>
-            <p className="leading-relaxed text-base">Rangkaian Prosesi Pernikahan <br /> dilaksanakan dalam adat Hindu Bali</p>
+            <p className="leading-relaxed text-base">Rangkaian Prosesi Pernikahan <br /> 
+              dilaksanakan dalam adat Hindu Bali, <br /> 
+              Tanggal 12 Oktober 2022
+            </p>
           </div>
         </div>
 
@@ -50,7 +53,12 @@ const Agendas = () => {
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 className="text-gray-900 text-lg title-font mb-2 font-bold">Resepsi</h2>
-            <p className="leading-relaxed text-base">Mengundang keluarga dan teman-teman semua untuk bersama merayakan momen bahagia kami</p>
+            <p className="leading-relaxed text-base">Mengundang keluarga dan teman-teman semua untuk bersama merayakan momen bahagia kami,</p>
+            {isBoth === '1' ? ( 
+              <p> Tanggal 13 Oktober 2022 & 20 November 2022 </p>
+            ) : (
+              <p> Tanggal 13 Oktober 2022 </p>
+            )}
           </div>
         </div>
       </div>
