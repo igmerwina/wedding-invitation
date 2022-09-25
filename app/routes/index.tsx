@@ -55,26 +55,49 @@ export default function Index() {
         className="flex justify-center items-center h-screen md:h-[800px] bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: `url(${isMobile ? heroBgMobile : heroBg})` }}
       >
-        <div className="mb-1 md:w-1/2">
-          <h5
-            className="text-left font-head text-2xl mb-4 text-[#EFEFEF]"
-            style={{ textShadow: "1px 1px 1px #CE7BB0" }}
-          >
-            The Wedding Of
-          </h5>
-          <h4
-            className="text-left font-head text-5xl mb-4 text-[#EFEFEF]"
-            style={{ textShadow: "3px 3px 1px #CE7BB0" }}
-          >
-            Erwin & Iin
-          </h4>
-          <div
-            className="text-left font-head text-md text-[#EFEFEF]"
-            style={{ textShadow: "1px 1px 1px #CE7BB0" }}
-          >
-            Kamis, 13 Oktober 2022
+        {isMobile ? (
+          <div className="mb-1 md:w-1/2 pb-64">
+            <h5
+              className="text-center font-head font-bold text-2xl mb-4 text-[#EFEFEF]"
+              style={{ textShadow: "3px 3px 3px #7e7878" }}
+            >
+              The Wedding Of
+            </h5>
+            <h4
+              className="text-center font-head text-5xl mb-4 text-[#EFEFEF]"
+              style={{ textShadow: "3px 3px 1px #7e7878" }}
+            >
+              Erwin & Iin
+            </h4>
+            <div
+              className="text-center font-head font-bold text-md text-[#EFEFEF]"
+              style={{ textShadow: "2px 2px 1px #7e7878" }}
+            >
+              Kamis, 13 Oktober 2022
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="mb-1 md:w-1/2">
+            <h5
+              className="text-left font-head text-2xl mb-4 text-[#EFEFEF]"
+              style={{ textShadow: "1px 1px 1px #CE7BB0" }}
+            >
+              The Wedding Of
+            </h5>
+            <h4
+              className="text-left font-head text-5xl mb-4 text-[#EFEFEF]"
+              style={{ textShadow: "3px 3px 1px #CE7BB0" }}
+            >
+              Erwin & Iin
+            </h4>
+            <div
+              className="text-left font-head text-md text-[#EFEFEF]"
+              style={{ textShadow: "1px 1px 1px #CE7BB0" }}
+            >
+              Kamis, 13 Oktober 2022
+            </div>
+          </div>
+        )}
       </div>
 
       <SectionWrapper>
@@ -128,7 +151,7 @@ export default function Index() {
       </SectionWrapper>
 
       <Footer />
-      
+
       <MusicPlayer play={!openWelcome} />
     </div>
   );
