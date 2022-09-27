@@ -64,9 +64,6 @@ export default function Index() {
               <h4 className="text-center font-head font-bold text-4xl mb-4 text-[#fff]">
                 Erwin & Iin
               </h4>
-              <div className="text-center font-head text-md text-[#FFF]">
-                Kamis, 13 Oktober 2022
-              </div>
             </div>
           </div>
         ) : (
@@ -95,16 +92,17 @@ export default function Index() {
         <BrideAndGroom />
       </SectionWrapper>
 
-      <SectionWrapper className="mb-20">
+      <SectionWrapper className="mb-5">
         <Agendas />
+      </SectionWrapper>
+
+      <SectionWrapper className="mb-10">
+        <Countdown />
       </SectionWrapper>
 
       {isBoth === '1' ? (
         <div>
           <SectionWrapper className="mb-10 pt-1">
-            <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
-              <h4 className="mb-1"><TextWithLine>Lokasi Acara</TextWithLine></h4>
-            </div>
             <LocationMap />
           </SectionWrapper>
 
@@ -114,19 +112,12 @@ export default function Index() {
         </div>
       ) : (
         <SectionWrapper className="mb-10 pt-1">
-          <div className="text-3xl font-head font-bold text-center mb-10 pt-3 text-gray-700">
-            <h4 className="mb-1"><TextWithLine>Lokasi Acara</TextWithLine></h4>
-          </div>
           <LocationMap />
         </SectionWrapper>
       )}
 
       <SectionWrapper className="mb-20">
         <GalleryPhotos />
-      </SectionWrapper>
-
-      <SectionWrapper className="mb-10">
-        <Countdown />
       </SectionWrapper>
 
       <SectionWrapper className="mb-10 bg-[#EFEFEF]">

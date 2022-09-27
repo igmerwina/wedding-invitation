@@ -16,13 +16,14 @@ const Footer = () => {
       </h3>
 
       <div className="content-center bg-[#EFEFEF]">
-        <div className="text-center text-xs sm:text-lg font-light font-head text-gray-600 py-7 mx-2">
+        <div className="text-center text-sm sm:text-lg font-light font-head text-gray-600 py-7 mx-2">
           <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami<br />
             Apabila Bapak/Ibu/Saudara(i) berkenan hadir <br />
             dan memberikan doa restu bagi kami. <br />
             Atas kehadiran dan doa restunya <br />
             Kami ucapkan Terima Kasih
-          </p>
+          </p><br />
+          <i>Om Shanti Shanti Shanti Om...</i>
         </div>
 
         <div className="text-center mt-2 text-sm sm:text-lg font-light font-sans text-gray-600">

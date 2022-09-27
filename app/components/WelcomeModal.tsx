@@ -55,7 +55,7 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
             className="px-5 transition-all py-3 font-sans font-medium rounded-md bg-[#CE7BB0] hover:bg-[#A267AC] outline-[#6867AC] text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
             onClick={onClose}
           >
-            Open Invitation
+            Buka Undangan
           </button>
         </div>
       </div>

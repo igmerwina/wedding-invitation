@@ -16,21 +16,8 @@ const Agendas = () => {
 
   return (
     <div className="max-w-3xl mx-auto text-center mt-10">
-      <div className="mb-4 text-gray-500 font-head md:text-lg font-medium">
-        Resepsi pernikahan kami akan dilaksanakan pada:
-      </div>
-      {isBoth === '1' ? (
-        <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-head">
-          Kamis, 13 Oktober 2022 <br /> <TextWithLine>&</TextWithLine> Minggu, 20 November 2022
-        </h3>
-      ) : (
-        <h3 className="text-3xl md:text-4xl mb-6 text-center text-gray-700 font-head">
-          Kamis, 13 Oktober 2022
-        </h3>)
-      }
-
-      <div className="mb-12 text-gray-500 font-head md:text-2xl font-medium mt-16">
-        <TextWithLine>Rangkaian Acara</TextWithLine>
+      <div className="text-2xl font-head font-bold text-center mb-10 pt-5 text-gray-700 px-2">
+        <h4 className="mb-1"><TextWithLine>Rangkaian Acara</TextWithLine></h4>
       </div>
 
       <div className="container mx-auto pt-2">
