@@ -1,42 +1,28 @@
 import { useLoaderData } from "remix";
 import { LoaderDataType } from "~/controls";
 import SectionWrapper from "./Utils/SectionWrapper";
+import TextWithLine from "./Utils/TextWithLine";
 
-const MAP_EMBEDED_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.786648656996!2d115.16062641538797!3d-8.42260218737717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd225d389fc9011%3A0x49760d2db5b741a4!2sBalai%20Bajar%20Cacab%20Jangkahan!5e0!3m2!1sen!2sid!4v1659887713299!5m2!1sen!2sid";
 const MAP_REDIRECT_URL =
   "https://www.google.com/maps/dir//Balai+Bajar+Cacab+Jangkahan,+H5G7%2BX44,+Cacab,+Biaung,+Penebel,+Tabanan+Regency,+Bali+82181/@-8.422521,115.1277957,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x2dd225d389fc9011:0x49760d2db5b741a4!2m2!1d115.1628337!2d-8.4226115!3e0";
 const MAP_TITLE = "Desa Cacab, Penebel, Tabanan";
 const MAP_ADDRESS =
-  "Dusun Cacab, Biaung. Kecamatan Penebel, Kabupaten Tabanan, Bali";
+  "Dusun Cacab, Biaung. Kec. Penebel, Kab. Tabanan, Bali";
 
 const LocationMap = () => {
   const { isBoth: isBoth } = useLoaderData<LoaderDataType>();
-  let title = 'Resepsi Pernikahan';
+  let title = 'Resepsi';
   isBoth === '1' ? title = 'Resepsi I' : title
 
   return (
     <div className="py-10 bg-[#EFEFEF]">
       <SectionWrapper>
-        <div className="flex flex-col-reverse md:flex-row">
-          <div className="w-full px-4 md:w-1/2">
-            <div className="p-2 bg-white rounded-lg shadow-lg">
-              <iframe
-                src={MAP_EMBEDED_URL}
-                className="w-full h-[350px] md:h-[350px]"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title={MAP_TITLE}
-                scrolling="no"
-                aria-label={MAP_TITLE}
-              />
-            </div>
+      <div className="text-3xl font-head font-bold text-center mb-10 pt-3 text-gray-700">
+            <h4 className="mb-1"><TextWithLine>Lokasi Acara</TextWithLine></h4>
           </div>
-
-          <div className="md:w-1/2 w-full px-4 mb-6 md:mb-0">
-            <div className="sticky top-8 text-center md:text-left">
+        <div className="flex flex-col-reverse md:flex-row">
+          <div className=" w-full px-4 mb-6 md:mb-0">
+            <div className="sticky top-8 text-center md:text-center">
               <h3 className="text-2xl font-head mb-3 font-semibold text-gray-700">
                 {title}
               </h3>
@@ -46,7 +32,7 @@ const LocationMap = () => {
               <p className="mb-16 md:mb-5 font-sans">{MAP_ADDRESS}</p>
               <p className="mb-1 font-sans font-bold">Kamis, 13 Oktober 2022</p>
               <p className="mb-5 font-sans font-semibold text-sm">🕰 11.00 - 18.00 WITA</p>
-              <div className="flex md:justify-start justify-center">
+              <div className="flex justify-center">
                 <a
                   href={MAP_REDIRECT_URL}
                   target="_blank"

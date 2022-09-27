@@ -1,13 +1,13 @@
 import TextWithLine from "./Utils/TextWithLine";
-import masker from "~/images/prokes/masker.jpg";
-import cucitgn from "~/images/prokes/cucitgn.jpg";
-import jarak from "~/images/prokes/socialdistancing.jpg";
+import masker from "~/images/prokes/masker.png";
+import cucitgn from "~/images/prokes/cucitgn.png";
+import jarak from "~/images/prokes/socialdistancing.png";
 
 const Protokol = () => {
   return (
     <div>
-      <div className="text-2xl font-head font-bold text-center mb-20 pt-5 text-gray-700 px-2">
-        <h4 className="mb-1"><TextWithLine>Mohon Patuhi Protokol Kesehatan Selama Menghadiri Acara</TextWithLine></h4>
+      <div className="text-2xl md:text-3xl font-head font-bold text-center mb-20 pt-5 text-gray-700 px-2">
+        <h4 className="mb-1"><TextWithLine>Mohon Patuhi Protokol Kesehatan</TextWithLine></h4>
       </div>
       <div className="grid grid-cols-3 gap-1 content-center">
         <div className="m-auto">

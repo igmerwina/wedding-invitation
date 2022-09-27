@@ -5,7 +5,7 @@ import groom from "~/images/iin.jpg";
 const BrideAndGroom = () => {
   return (
     <div className="pt-20 pb-4">
-      <h3 className="text-4xl text-center font-sans font-bold text-gray-700 mb-6">
+      <h3 className="text-3xl text-center font-sans font-bold text-gray-700 mb-6">
       <TextWithLine>Kami yang Berbahagia</TextWithLine>
       </h3>
       <div className="w-full flex flex-wrap pb-2">

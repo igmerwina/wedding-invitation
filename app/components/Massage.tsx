@@ -52,8 +52,8 @@ const Message = memo(() => {
 
   return (
     <div>
-      <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
-        <h4 className="mb-1"><TextWithLine>Berikan Doa Terbaik Untuk Kami</TextWithLine></h4>
+      <div className="text-2xl md:text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
+        <h4 className="mb-1"><TextWithLine>Berikan Doa/Ucapan Bagi Kami</TextWithLine></h4>
       </div>
       <div className="w-full flex flex-wrap">
         <div className="w-full md:w-1/2 px-4">
@@ -106,12 +106,16 @@ const Message = memo(() => {
               </div>
             )}
 
+            <h5 className="font-semibold font-sans text-sm md:text-base text-gray-700 underline -pb-3">
+              Daftar Ucapan
+            </h5>
+
             {messagesDisplay.map((message, i) => (
               <div className="mb-7 mt-8 md:mb-5" key={i}>
-                <h5 className="font-semibold font-sans text-gray-700 mb-1">
-                  📩 {message.name}
+                <h5 className="font-semibold font-sans text-sm md:text-base text-gray-700 mb-1">
+                  📩 - {message.name}
                 </h5>
-                <p className="whitespace-pre-wrap font-sans text-gray-800 leading-6 border-b-2 pl-6 py-1.5">
+                <p className="whitespace-pre-wrap font-head text-sm md:text-base text-gray-800 leading-6 border-b-2 pl-6 py-1.5">
                   {message.message}
                 </p>
               </div>

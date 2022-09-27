@@ -1,4 +1,6 @@
 import { memo, useEffect, useState } from "react";
+import { useLoaderData } from "remix";
+import { LoaderDataType } from "~/controls";
 import TextWithLine from "./Utils/TextWithLine";
 
 const EVENT_DATE = "October 12, 2022 10:00:00";
@@ -43,10 +45,12 @@ const Countdown = memo(() => {
     }, 1000);
   }, []);
 
+  const { isBoth: isBoth } = useLoaderData<LoaderDataType>();
+
   return (
     <div className="w-full px-1 md:px-4">
       <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700 px-2">
-        <TextWithLine>Hitung Mundur Hari Bahagia Kami</TextWithLine>
+        <TextWithLine>Save The Date</TextWithLine>
       </div>
 
       <div className="flex justify-center pb-10">
@@ -55,6 +59,16 @@ const Countdown = memo(() => {
         <NumberCard number={countdown.minutes} label="Menit" />
         <NumberCard number={countdown.seconds} label="Detik" />
       </div>
+
+      {isBoth === '1' ? (
+        <h3 className="text-2xl md:text-3xl mb-6 text-center text-gray-700 font-head">
+          Kamis, 13 Oktober 2022 <br /> <TextWithLine>&</TextWithLine> Minggu, 20 November 2022
+        </h3>
+      ) : (
+        <h3 className="text-2xl md:text-3xl mb-6 text-center text-gray-700 font-head">
+          Kamis, 13 Oktober 2022
+        </h3>)
+      }
     </div>
   );
 });
@@ -68,7 +82,7 @@ const NumberCard = memo(({ number, label }: NumberCardProps) => {
   const numberString = number < 100 ? ("0" + number).slice(-2) : String(number);
 
   return (
-    <div className="rounded-lg bg-[#EFEFEF] py-7 px-2 w-24 text-center mx-2 text-gray-700 font-sans">
+    <div className="rounded-lg bg-[#fde1e1] py-7 px-2 w-24 text-center mx-2 text-gray-700 font-sans">
       <div className="text-3xl mb-2">{numberString}</div>
       <div>{label}</div>
     </div>
