@@ -9,7 +9,7 @@ import SectionWrapper from "~/components/Utils/SectionWrapper";
 import WelcomeModal from "~/components/WelcomeModal";
 import { indexAction, indexLoader, LoaderDataType } from "~/controls";
 import heroBg from "~/images/hero-bg.jpg";
-import heroBgMobile from "~/images/hero-bg-mobiles.jpg";
+import heroBgMobile from "~/images/hero-bg-mobile.jpg";
 import MusicPlayer from "~/components/MusicPlayer";
 import GalleryPhotos from "~/components/GalleryPhotos";
 import LocationMapLombok from "~/components/LocationMapLombok";
@@ -56,44 +56,31 @@ export default function Index() {
         style={{ backgroundImage: `url(${isMobile ? heroBgMobile : heroBg})` }}
       >
         {isMobile ? (
-          <div className="mb-1 md:w-1/2 pb-64">
-            <h5
-              className="text-center font-head font-bold text-2xl mb-4 text-[#EFEFEF]"
-              style={{ textShadow: "3px 3px 3px #7e7878" }}
-            >
-              The Wedding Of
-            </h5>
-            <h4
-              className="text-center font-head text-5xl mb-4 text-[#EFEFEF]"
-              style={{ textShadow: "3px 3px 1px #7e7878" }}
-            >
-              Erwin & Iin
-            </h4>
-            <div
-              className="text-center font-head font-bold text-md text-[#EFEFEF]"
-              style={{ textShadow: "2px 2px 1px #7e7878" }}
-            >
-              Kamis, 13 Oktober 2022
+          <div className="mt-96">
+            <div className="bg-[#000] rounded-lg bg-opacity-40 py-3 px-20">
+              <h5 className="text-center font-head text-2xl mb-4 text-[#fff]">
+                The Wedding Of
+              </h5>
+              <h4 className="text-center font-head font-bold text-4xl mb-4 text-[#fff]">
+                Erwin & Iin
+              </h4>
+              <div className="text-center font-head text-md text-[#FFF]">
+                Kamis, 13 Oktober 2022
+              </div>
             </div>
           </div>
         ) : (
           <div className="mb-1 md:w-1/2">
-            <h5
-              className="text-left font-head text-2xl mb-4 text-[#EFEFEF]"
-              style={{ textShadow: "1px 1px 1px #CE7BB0" }}
-            >
+            <h5 className="text-left font-head text-2xl mb-4 text-[#EFEFEF]"
+              style={{ textShadow: "1px 1px 1px #CE7BB0" }} >
               The Wedding Of
             </h5>
-            <h4
-              className="text-left font-head text-5xl mb-4 text-[#EFEFEF]"
-              style={{ textShadow: "3px 3px 1px #CE7BB0" }}
-            >
+            <h4 className="text-left font-head text-5xl mb-4 text-[#EFEFEF]"
+              style={{ textShadow: "3px 3px 1px #CE7BB0" }} >
               Erwin & Iin
             </h4>
-            <div
-              className="text-left font-head text-md text-[#EFEFEF]"
-              style={{ textShadow: "1px 1px 1px #CE7BB0" }}
-            >
+            <div className="text-left font-head text-md text-[#EFEFEF]"
+              style={{ textShadow: "1px 1px 1px #CE7BB0" }} >
               Kamis, 13 Oktober 2022
             </div>
           </div>
@@ -127,7 +114,7 @@ export default function Index() {
         </div>
       ) : (
         <SectionWrapper className="mb-10 pt-1">
-          <div className="text-3xl font-head font-bold text-center mb-10 pt-10 text-gray-700">
+          <div className="text-3xl font-head font-bold text-center mb-10 pt-3 text-gray-700">
             <h4 className="mb-1"><TextWithLine>Lokasi Acara</TextWithLine></h4>
           </div>
           <LocationMap />
