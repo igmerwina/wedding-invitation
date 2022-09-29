@@ -11,16 +11,16 @@ const LocationMapLombok = () => {
       <SectionWrapper>
         <div className="flex flex-col-reverse md:flex-row">
           <div className="w-full px-4 mb-6 md:mb-0">
-            <div className="sticky top-8 text-center">
-              <h3 className="text-2xl font-head mb-3 font-semibold text-gray-700">
+            <div className="sticky top-8 text-center text-gray-700 font-bold">
+              <h3 className="text-2xl font-head mb-3">
                 Resepsi II
               </h3>
-              <h4 className="text-xl md:text-xl mb-4 font-sans text-gray-700">
+              <h4 className="text-xl md:text-xl mb-4 font-sans">
                 Ballroom Mandalika <br />Hotel Lombok Astoria, Mataram
               </h4>
-              <p className="mb-16 md:mb-5 font-sans">{MAP_ADDRESS}</p>
-              <p className="mb-1 font-sans font-bold">Minggu, 20 November 2022</p>
-              <p className="mb-5 font-sans font-semibold text-sm">🕰 11.30 - 14.00 WITA</p>
+              <p className="mb-16 md:mb-5 font-sans font-normal">{MAP_ADDRESS}</p>
+              <p className="mb-1 font-sans text-xl">Minggu, 20 November 2022</p>
+              <p className="mb-5 font-sans text-xl">🕰 11.30 - 14.00 WITA</p>
               <div className="flex justify-center">
                 <a
                   href={MAP_REDIRECT_URL}
