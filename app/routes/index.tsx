@@ -15,7 +15,6 @@ import GalleryPhotos from "~/components/GalleryPhotos";
 import LocationMapLombok from "~/components/LocationMapLombok";
 import ProtokolKesehatan from "~/components/Protokol";
 import OpeningMessage from "~/components/OpeningMessage";
-import TextWithLine from "~/components/Utils/TextWithLine";
 import { useLoaderData } from "remix";
 import Footer from "~/components/Footer";
 
@@ -67,18 +66,16 @@ export default function Index() {
             </div>
           </div>
         ) : (
-          <div className="mb-1 md:w-1/2">
-            <h5 className="text-left font-head text-2xl mb-4 text-[#EFEFEF]"
-              style={{ textShadow: "1px 1px 1px #CE7BB0" }} >
-              The Wedding Of
-            </h5>
-            <h4 className="text-left font-head text-5xl mb-4 text-[#EFEFEF]"
-              style={{ textShadow: "3px 3px 1px #CE7BB0" }} >
-              Erwin & Iin
-            </h4>
-            <div className="text-left font-head text-md text-[#EFEFEF]"
-              style={{ textShadow: "1px 1px 1px #CE7BB0" }} >
-              Kamis, 13 Oktober 2022
+          <div className="grid grid-cols-3 gap-2 content-center">
+            <div className="text-center static w-full pb-10 pr-20 pl-10">
+              <h5 className="font-head text-4xl text-[#EFEFEF]"
+                style={{ textShadow: "2px 2px 2px #CE7BB0" }} >
+                The Wedding Of
+              </h5>
+              <h4 className="text-center font-head text-8xl text-[#EFEFEF]"
+                style={{ textShadow: "3px 3px 2px #CE7BB0" }} >
+                Erwin <br /> -&- <br /> Iin
+              </h4>
             </div>
           </div>
         )}

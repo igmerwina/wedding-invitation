@@ -22,9 +22,9 @@ const BrideAndGroom = () => {
             <div className="mb-4">
               <TextWithLine>Pengantin Pria</TextWithLine>
             </div>
-            <p className="font-sans text-gray-500 leading-6">
+            <p className="font-head text-gray-500 leading-6">
               Putra kedua dari <br/>
-              Bapak dr. Winangun Sp.PD & <br/>
+              Bapak dr. I Gusti Putu Winangun Sp.PD & <br/>
               Ibu Dra. Ni Made Citra Resmi, M.M
             </p>
           </div>
@@ -46,7 +46,7 @@ const BrideAndGroom = () => {
               <div className="mb-4">
                 <TextWithLine>Pengantin Wanita</TextWithLine>
               </div>
-              <p className="font-sans text-gray-500 leading-6">
+              <p className="font-head text-gray-500 leading-6">
                 Putri pertama dari <br /> 
                 Bapak Ir. I Made Budiasa Astawa & <br />
                 Ibu Ir. Putu Nuryati (Almh.)

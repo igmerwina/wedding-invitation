@@ -3,8 +3,14 @@ import { useLoaderData } from "remix";
 import { LoaderDataType } from "~/controls";
 import TextWithLine from "./Utils/TextWithLine";
 
-const EVENT_DATE = "October 12, 2022 10:00:00";
+const EVENT_DATE = "October 13, 2022 11:00:00";
 const COUNTDOWN_DATE = new Date(EVENT_DATE).getTime();
+const CALENDAR_URL = `https://www.google.com/calendar/render?
+action=TEMPLATE&
+text=Pawiwahan+Erwin+%26+Iin+💕
+location=Dusun Cacab - Jangkahan. Desa biaung. Kecamatan Penebel. Tabanan&
+details=Dengan sepenuh kerendahan hati dan rasa syukur kepada Tuhan YME%2C kami ingin menyampaikan kabar bahagia mengenai pernikahan kami berdua%3A I Gusti Made Erwin A dan Putu Ayu Indira Savitri.%0A%0ATautan undangan%3A%0Ahttps%3A%2F%2Fwww.weddingerwiniin.com%2F%0A%0AMerupakan suatu kebahagiaan bagi kami jika Bapak%2FIbu%2FSaudara%2Fi berkenan hadir dalam acara resepsi pernikahan kami serta%2F memberikan doa restu.%0A%0AAtas perhatiannya%2C kami ucapkan terima kasih.%0A%0AKami yang berbahagia%2C%0AErwin %26 Iin&
+dates=20221013T110000Z+08:00%2F20221013T160000Z+08:00`;
 
 interface COUNTDOWNTYPE {
   days: number;
@@ -69,6 +75,15 @@ const Countdown = memo(() => {
           Kamis, 13 Oktober 2022
         </h3>)
       }
+         <div className="px-12 flex max-w-md mx-auto mb-10 text-center">
+        <a
+          href={CALENDAR_URL}
+          target={"_blank"}
+          className="px-2 py-2 transition-all text-lg font-semibold w-full rounded-lg bg-[#CE7BB0] hover:bg-[#A267AC] outline-[#6867AC] text-white outline-4 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+        >
+          Simpan ke Google Calendar
+        </a>
+      </div>
     </div>
   );
 });

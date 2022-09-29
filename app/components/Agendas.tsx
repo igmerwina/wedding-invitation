@@ -4,13 +4,6 @@ import stage from "~/images/stage.jpg";
 import { useLoaderData } from "remix";
 import { LoaderDataType } from "~/controls";
 
-const CALENDAR_URL = `https://www.google.com/calendar/render?
-action=TEMPLATE&
-text=Pernikahan+Erwin+%26+Iin+%F0%9F%92%8C&
-location=Dusun Cacab - Jangkahan. Desa biaung. Kecamatan Penebel. Tabanan&
-details=Dengan segala kerendahan hati dan sukacita%2C kami menyampaikan kabar bahagia mengenai pernikahan kami%3A I Gusti Made Erwin A dan Putu Ayu Indira Savitri.%0A%0ATautan undangan%3A%0Ahttps%3A%2F%2Fwww.igmerwina.github.io/weddingerwiniin%2F%0A%0AMerupakan sebuah kebahagiaan bagi kami jika Bapak%2FIbu%2FSaudara%2Fi turut hadir dalam acara resepsi kami dan%2Fatau berkenan memberikan doa restu.%0A%0AAtas perhatiannya%2C kami ucapkan terima kasih.%0A%0AYang berbahagia%2C%0AErwin %26 Iin&
-dates=20221013T010000Z%2F20220730T080000Z`;
-
 const Agendas = () => {
   const { isBoth: isBoth } = useLoaderData<LoaderDataType>();
 
@@ -26,8 +19,8 @@ const Agendas = () => {
             style={{ backgroundImage: `url(${cincin})` }} >
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-gray-900 text-lg title-font mb-2 font-bold">Upacara Pawiwahan</h2>
-            <p className="leading-relaxed text-base">Rangkaian Prosesi Pernikahan <br /> 
+            <h2 className="text-gray-900 text-lg title-font mb-2 font-semibold">Upacara Pawiwahan</h2>
+            <p className="leading-relaxed text-base px-10">Rangkaian Prosesi Pernikahan <br /> 
               dilaksanakan dalam adat Hindu Bali, <br /> 
               Tanggal 12 Oktober 2022
             </p>
@@ -39,10 +32,10 @@ const Agendas = () => {
             style={{ backgroundImage: `url(${stage})` }} >
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-gray-900 text-lg title-font mb-2 font-bold">Resepsi</h2>
-            <p className="leading-relaxed text-base">Mengundang keluarga dan teman-teman semua untuk bersama merayakan momen bahagia kami,</p>
+            <h2 className="text-gray-900 text-lg title-font mb-2 font-semibold">Resepsi</h2>
+            <p className="leading-relaxed text-base px-14">Mengundang keluarga dan teman-teman semua untuk bersama merayakan momen bahagia kami,</p>
             {isBoth === '1' ? ( 
-              <p> Tanggal 13 Oktober 2022 & 20 November 2022 </p>
+              <p> Tanggal 13 Oktober 2022 <br /> -&- <br />20 November 2022 </p>
             ) : (
               <p> Tanggal 13 Oktober 2022 </p>
             )}

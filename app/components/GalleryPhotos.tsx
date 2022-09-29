@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import foto10 from "~/images/gallery/foto-10.jpg";
@@ -76,7 +76,32 @@ const photos = [
     height: 3,
   },
   {
+    src: foto8,
+    width: 3,
+    height: 4,
+  },
+  {
     src: foto17,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: foto9,
+    width: 3,
+    height: 4,
+  },
+  {
+    src: foto11,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: foto26,
+    width: 3,
+    height: 2,
+  },
+  {
+    src: foto12,
     width: 3,
     height: 2,
   },
