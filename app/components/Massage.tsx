@@ -106,16 +106,17 @@ const Message = memo(() => {
               </div>
             )}
 
-            <h5 className="font-semibold font-sans text-sm md:text-base text-gray-700 underline -pb-3">
+            <h5 className="font-bold font-sans text-sm md:text-base text-gray-700 mb-1">
               Daftar Ucapan
             </h5>
 
             {messagesDisplay.map((message, i) => (
-              <div className="mb-7 mt-8 md:mb-5" key={i}>
-                <h5 className="font-semibold font-sans text-sm md:text-base text-gray-700 mb-1">
-                  📩 - {message.name}
+              <div className="mb-4 mt-2 md:mb-5" key={i}>
+                <h5 className="font-semibold font-sans text-sm md:text-base text-gray-700">
+                  💌  {message.name}
                 </h5>
-                <p className="whitespace-pre-wrap font-head text-sm md:text-base text-gray-800 leading-6 border-b-2 pl-6 py-1.5">
+                <p className="text-left text-xs font-light mt-1 pl-5"> {new Date(`${message.date}`).toDateString()}</p>
+                <p className="whitespace-pre-wrap font-extralight font-head text-sm sm:text-lg md:text-base text-gray-800 leading-6 sm:leading-10 border-b-2 pl-5 pt-1 pb-4">
                   {message.message}
                 </p>
               </div>
@@ -124,7 +125,7 @@ const Message = memo(() => {
 
           {/* PAGINATION */}
           {totalPages === 1 ? null : (
-            <div className="flex items-center justify-center pl-2 pt-4">
+            <div className="flex items-center justify-center pl-2 pt-0 mb-3">
               <button
                 className="mr-2 text-2xl text-gray-700 transition-all hover:text-[#CE7BB0] disabled:opacity-50 disabled:hover:text-gray-700 pt-1"
                 onClick={() => onChangePage(page - 1)}

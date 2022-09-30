@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div className="text-center text-sm sm:text-lg font-light font-sans text-gray-600 bg-[#e2e2e2]">
           <div className="p-3 grid sm:grid-cols-2 gap-4 sm:text-right sm:border-r-4 sm:text-sm">
-            <p><br />
+            <p>
               © {(new Date().getFullYear())} - build with 💕 by <strong><a href="https://instagram.com/igmerwina" target="blank"><b><u>Erwin</u></b></a></strong>
             </p>
 
@@ -50,9 +50,9 @@ const Footer = () => {
             ) : (
               <div className="mb-0 md:mb-0 sm:text-left font-light text-xs sm:text-sm pl-2">
                 <p>
-                  ✅- <a href="https://github.com/igmerwina/wedding-invitation" target="blank" className="underline"> Code</a> <br />
-                  ✅- <a href="https://youtu.be/M-iIFo6wJ_w" target="blank" className="underline"> Music</a> <br />
-                  ✅- <a href="https://www.instagram.com/holly.lotus/" target="blank" className="underline"> Photo</a> <br />
+                  © <a href="https://github.com/igmerwina/wedding-invitation" target="blank" className="underline"> Code</a>
+                  - <a href="https://youtu.be/M-iIFo6wJ_w" target="blank" className="underline"> Music</a>
+                  - <a href="https://www.instagram.com/holly.lotus/" target="blank" className="underline"> Photo</a>
                 </p>
               </div>
             )}
