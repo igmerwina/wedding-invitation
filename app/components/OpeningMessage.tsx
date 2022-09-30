@@ -23,8 +23,7 @@ const OpeningMessage = () => {
           </div>
           <p> Dalam kebahagiaan dan rasa syukur kepada Tuhan YME, 
             kami bermaksud untuk mengundang Bapak/Ibu 
-            pada acara Resepi pernikahan kami<br />
-
+            pada acara Resepi pernikahan Putra & Putri Kami<br />
             <TextWithLine>•••</TextWithLine>
           </p>
         </div>
