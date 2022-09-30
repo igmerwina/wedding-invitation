@@ -38,20 +38,20 @@ export const meta: MetaFunction = () => {
   return {
     title: "Wedding Invitation of Erwin & Iin",
     description:
-      "Rabu, 12 Oktober 2022, Bali",
+      "Kamis, 13 Oktober 2022, Bali",
 
     "og:image": ogimage,
     "og:image:type": "image/jpeg",
     "og:site_name": "weddingerwiniin",
-    "og:url": "https://www.amifauzi.com/",
+    "og:url": "https://www.weddingerwiniin.com/",
     "og:title": "Wedding Invitation of Erwin & Iin",
-    "og:description": `Rabu, 12 Oktober 2022, Bali`,
+    "og:description": `Kamis, 13 Oktober 2022, Bali`,
     "og:type": "website",
 
     "twitter:image": ogimage,
     "twitter:card": "summary_large_image",
     "twitter:description":
-      "Rabu, 12 Oktober 2022, Bali",
+      "Kamis, 13 Oktober 2022, Bali",
   };
 };
 
