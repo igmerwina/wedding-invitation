@@ -31,7 +31,7 @@ const LocationMap = () => {
               </h4>
               <p className="mb-16 md:mb-5 font-sans font-normal">{MAP_ADDRESS}</p>
               <p className="mb-1 font-sans text-xl">Kamis, 13 Oktober 2022</p>
-              <p className="mb-5 font-sans text-xl">🕰 11.00 - 16.00 WITA</p>
+              <p className="mb-5 font-sans text-xl">🕰 11.00 - 18.00 WITA</p>
               <div className="flex justify-center">
                 <a
                   href={MAP_REDIRECT_URL}

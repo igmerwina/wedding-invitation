@@ -22,7 +22,7 @@ const Agendas = () => {
             <h2 className="text-gray-900 text-lg title-font mb-2 font-semibold">Upacara Pawiwahan</h2>
             <p className="leading-relaxed text-base pr-8">Rangkaian Prosesi Pernikahan <br /> 
               dilaksanakan dalam adat Hindu Bali. <br /> 
-              📅 - 12 Oktober 2022
+              Tanggal 12 Oktober 2022
             </p>
           </div>
         </div>
@@ -33,11 +33,11 @@ const Agendas = () => {
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
             <h2 className="text-gray-900 text-lg title-font mb-2 font-semibold">Resepsi Pernikahan</h2>
-            <p className="leading-relaxed text-base mx-10 sm:mx-0">Mengundang Bapak/Ibu,Saudara, keluarga, dan semua rekan untuk bersama merayakan momen bahagia kami.</p>
+            <p className="leading-relaxed text-base mx-10 sm:mx-0">Mengundang Bapak/Ibu,Saudara(i), keluarga, dan semua rekan untuk bersama merayakan momen bahagia kami.</p>
             {isBoth === '1' ? ( 
-              <p> 📅 - 13 Oktober 2022 <br /> -&- <br />20 November 2022 </p>
+              <p> Tanggal 13 Oktober 2022 <br /> -&- <br />20 November 2022 </p>
             ) : (
-              <p> 📅 - 13 Oktober 2022 </p>
+              <p> Tanggal 13 Oktober 2022 </p>
             )}
           </div>
         </div>

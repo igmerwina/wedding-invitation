@@ -115,7 +115,7 @@ const Message = memo(() => {
                 <h5 className="font-semibold font-sans text-sm md:text-base text-gray-700">
                   💌  {message.name}
                 </h5>
-                <p className="text-left text-xs font-light mt-1 pl-5"> {new Date(`${message.date}`).toDateString()}</p>
+                <p className="text-xs font-light mt-1 pl-5"> {new Date(`${message.date}`).toDateString()}</p>
                 <p className="whitespace-pre-wrap font-extralight font-head text-sm sm:text-lg md:text-base text-gray-800 leading-6 sm:leading-10 border-b-2 pl-5 pt-1 pb-4">
                   {message.message}
                 </p>

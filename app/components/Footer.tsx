@@ -19,13 +19,26 @@ const Footer = () => {
       <div className="content-center bg-[#EFEFEF]">
         <div className="text-center text-sm sm:text-lg font-normal font-head text-gray-600 py-7 mx-12 sm:px-72">
           <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami
-            apabila Bapak/Ibu/Saudara(i) berkenan hadir
+            apabila Bapak/Ibu,Saudara(i) berkenan hadir
             dan memberikan doa restu. <br />
           </p>
           <p className="mt-4 sm:mt-1">
             Atas kehadiran dan doa restunya,
-            kami ucapkan Terima Kasih
-          </p><br />
+            kami ucapkan Terima Kasih.
+          </p>
+          <p className="mt-4 sm:mt-1">
+            Kami yang berbahagia, <br />
+          </p>
+          {isMobile ? (
+            <p>
+              Kel. dr. IGP Winangun, Sp.PD & <br /> Kel. I Made Budiasa Astawa<br />
+            </p>
+          ) : (
+            <p>
+              Kel. dr. IGP Winangun, Sp.PD & Kel. I Made Budiasa Astawa<br />
+            </p>
+          )}
+          <br />
           <div className="m-auto sm:w-24 sm:h-24 h-16 w-16 bg-center bg-contain bg-no-repeat px-10"
             style={{ backgroundImage: `url(${lotus})` }} >
           </div>
