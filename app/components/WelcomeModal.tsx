@@ -35,7 +35,7 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
             {!recipient ? null : (
               <Fragment>
                 <div className="mb-1 font-bold" style={{ textShadow: "2px 2px 2px #EFEFEF" }}>
-                  <TextWithLine>Kepada</TextWithLine>
+                  <TextWithLine>Kepada Yth:</TextWithLine>
                 </div>
                 <div
                   className={
