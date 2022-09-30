@@ -21,7 +21,7 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
     >
       <div className="bg-[#EFEFEF] h-screen w-screen flex flex-row justify-center items-start fixed overflow-auto py-20 box-border">
         <div className="flex flex-col items-center p-5 bg-no-repeat bg-center bg-contain my-auto w-full md:w-[500]"
-          style={{ backgroundImage: `url(${ topflower })` }} >
+          style={{ backgroundImage: `url(${topflower})` }} >
           <h5 className="text-center font-medium font-sans text-xl md:text-2xl mb-2 md:mb-3 text-gray-600"
             style={{ textShadow: "3px 3px 2px #EFEFEF" }} >
             The Wedding Invitation of
@@ -31,23 +31,32 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
             Erwin & Iin
           </h4>
 
-          <div className="w-[350px] mb-12">
-            {!recipient ? null : (
-              <Fragment>
-                <div className="mb-1 font-bold" style={{ textShadow: "2px 2px 2px #EFEFEF" }}>
-                  <TextWithLine>Kepada Yth:</TextWithLine>
+          <div className="w-[350px] mb-8">
+            <Fragment>
+              {!recipient ? (
+                <div className="text-white text-xl bg-[#000] rounded-lg bg-opacity-50 py-3">
+                  <div className="font-bold text-center font-head italic">
+                    Kepada Yth: <br />
+                    Bapak/Ibu/Saudara(i)
+                  </div>
                 </div>
-                <div
-                  className={
-                    recipient.length < 50
-                      ? "font-medium text-center font-sans bg-[#000] rounded-lg bg-opacity-40 text-white leading-7 text-lg py-3"
-                      : "font-medium text-center font-sans bg-[#000] rounded-lg bg-opacity-40 text-white leading-7 px-4 md:px-0"
-                  }
-                >
-                  {recipient}
+              ) : (
+                <div>
+                  <div className="mb-1 font-bold" style={{ textShadow: "2px 2px 2px #EFEFEF" }}>
+                    <TextWithLine>Kepada Yth:</TextWithLine>
+                  </div>
+                  <div
+                    className={
+                      recipient.length < 50
+                        ? "font-medium text-center font-sans bg-[#000] rounded-lg bg-opacity-50 text-white leading-7 text-lg py-3"
+                        : "font-medium text-center font-sans bg-[#000] rounded-lg bg-opacity-50 text-white leading-7 px-4 md:px-0"
+                    }
+                  >
+                    {recipient}
+                  </div>
                 </div>
-              </Fragment>
-            )}
+              )}
+            </Fragment>
           </div>
 
           <button
