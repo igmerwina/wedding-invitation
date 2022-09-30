@@ -16,13 +16,13 @@ const BrideAndGroom = () => {
               alt="pengantin perempuan"
               className="w-80 h-100 rounded-full mb-8"
             />
-            <h3 className="text-xl font-medium font-head mb-4 text-gray-800">
+            <h3 className="text-xl font-medium font-head mb-4 text-black">
               I Gusti Made Erwin Ardiantha, M.T
             </h3>
             <div className="mb-4">
               <TextWithLine>Pengantin Pria</TextWithLine>
             </div>
-            <p className="font-head text-gray-500 leading-6">
+            <p className="font-head text-gray-600 leading-6">
               Putra kedua dari <br/>
               Bapak dr. I Gusti Putu Winangun Sp.PD & <br/>
               Ibu Dra. Ni Made Citra Resmi, M.M
@@ -38,7 +38,7 @@ const BrideAndGroom = () => {
                 alt="pengantin laki-laki"
                 className="w-80 h-100 rounded-full mb-8"
               />
-              <h3 className="text-xl font-medium font-head mb-4 text-gray-800">
+              <h3 className="text-xl font-medium font-head mb-4 text-black">
                 Putu Ayu Indira Savitri, S.Si.Kom
               </h3>
             </div>
@@ -46,7 +46,7 @@ const BrideAndGroom = () => {
               <div className="mb-4">
                 <TextWithLine>Pengantin Wanita</TextWithLine>
               </div>
-              <p className="font-head text-gray-500 leading-6">
+              <p className="font-head text-gray-600 leading-6">
                 Putri pertama dari <br /> 
                 Bapak Ir. I Made Budiasa Astawa & <br />
                 Ibu Ir. Putu Nuryati (Almh.)

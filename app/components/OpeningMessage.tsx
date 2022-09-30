@@ -8,7 +8,7 @@ const OpeningMessage = () => {
         <TextWithLine>Om Swastiastu</TextWithLine>
       </h3>
       <div className="pb-2 -pt-2 content-center">
-        <div className="text-center text-sm sm:text-lg italic font-normal font-head text-gray-600 pb-2 sm:px-44 px-16">
+        <div className="text-center text-sm sm:text-lg italic font-normal font-head text-black pb-2 sm:px-44 px-16">
           <p>
             Ya Tuhanku Yang Maha Pengasih dan Penyayang,
             anugrahkanlah kepada pasangan ini kebahagiaan,
@@ -17,7 +17,7 @@ const OpeningMessage = () => {
             <TextWithLine>(Rgveda: X.85.42)</TextWithLine>
           </p>
         </div>
-        <div className="text-center text-sm sm:text-lg font-light font-head text-gray-600 mb-5 px-16 sm:px-44">
+        <div className="text-center text-sm sm:text-lg font-light font-head text-black mb-5 px-16 sm:px-44">
           <div className="m-auto sm:w-24 sm:h-24 h-16 w-16 bg-center bg-contain bg-no-repeat px-10"
             style={{ backgroundImage: `url(${lotus})` }} >
           </div>

@@ -12,12 +12,12 @@ const Footer = () => {
 
   return (
     <div className="pt-14">
-      <h3 className="text-2xl sm:text-3xl text-center font-sans pt-7 font-bold bg-[#EFEFEF] text-gray-700">
+      <h3 className="text-2xl sm:text-3xl text-center font-sans pt-7 font-bold bg-[#EFEFEF] text-gray-900">
         <TextWithLine>Terima Kasih</TextWithLine>
       </h3>
 
       <div className="content-center bg-[#EFEFEF]">
-        <div className="text-center text-sm sm:text-lg font-normal font-head text-gray-600 py-7 mx-12 sm:px-72">
+        <div className="text-center text-sm sm:text-lg font-normal font-head text-gray-900 py-7 mx-12 sm:px-72">
           <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami
             apabila Bapak/Ibu,Saudara(i) berkenan hadir
             dan memberikan doa restu. <br />
@@ -31,11 +31,11 @@ const Footer = () => {
           </p>
           {isMobile ? (
             <p>
-              Kel. dr. IGP Winangun, Sp.PD & <br /> Kel. I Made Budiasa Astawa<br />
+              Kel. dr. IGP Winangun, Sp.PD & <br /> Ir. Kel. I Made Budiasa Astawa<br />
             </p>
           ) : (
             <p>
-              Kel. dr. IGP Winangun, Sp.PD & Kel. I Made Budiasa Astawa<br />
+              Kel. dr. IGP Winangun, Sp.PD & Kel. Ir. I Made Budiasa Astawa<br />
             </p>
           )}
           <br />
@@ -46,7 +46,7 @@ const Footer = () => {
           <TextWithLine>•••</TextWithLine>
         </div>
 
-        <div className="text-center text-sm sm:text-lg font-light font-sans text-gray-600 bg-[#e2e2e2]">
+        <div className="text-center text-sm sm:text-lg font-light font-sans text-gray-900 bg-[#e2e2e2]">
           <div className="p-3 grid sm:grid-cols-2 gap-4 sm:text-right sm:border-r-4 sm:text-sm">
             <p>
               © {(new Date().getFullYear())} - build with 💕 by <strong><a href="https://instagram.com/igmerwina" target="blank"><b><u>Erwin</u></b></a></strong>
