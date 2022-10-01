@@ -58,7 +58,7 @@ export const meta: MetaFunction = () => {
 export default function App() {
   return (
     <html lang="id">
-      <head>
+      <head prefix="og: https://ogp.me/ns#">
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
