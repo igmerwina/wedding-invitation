@@ -37,7 +37,8 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
                 <div className="text-white text-xl bg-[#000] rounded-lg bg-opacity-50 py-3">
                   <div className="font-semibold text-center font-head italic">
                     Kepada Yth: <br />
-                    Bapak/Ibu/Saudara(i)
+                    Bapak/Ibu/Saudara(i) <br />
+                    <u>Tamu Undangan</u>
                   </div>
                 </div>
               ) : (
@@ -48,8 +49,8 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
                   <div
                     className={
                       recipient.length < 50
-                        ? "font-medium text-center font-sans bg-[#000] rounded-lg bg-opacity-50 text-white leading-7 text-lg py-3"
-                        : "font-medium text-center font-sans bg-[#000] rounded-lg bg-opacity-50 text-white leading-7 px-4 md:px-0"
+                        ? "font-semibold text-center font-head bg-[#000] rounded-lg bg-opacity-50 text-white leading-7 text-lg py-3"
+                        : "font-semibold text-center font-head bg-[#000] rounded-lg bg-opacity-50 text-white leading-7 px-4 md:px-0"
                     }
                   >
                     {recipient}
