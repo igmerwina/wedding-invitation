@@ -30,7 +30,7 @@ const Footer = () => {
             Kami yang berbahagia, <br />
           </p>
           {isMobile ? (
-            <p> Kel. dr. IGP Winangun, Sp.PD & <br /> Ir. Kel. I Made Budiasa Astawa<br /> </p>
+            <p> Kel. dr. IGP Winangun, Sp.PD & <br /> Kel. Ir. I Made Budiasa Astawa<br /> </p>
           ) : (
             <p> Kel. dr. IGP Winangun, Sp.PD &emsp;&emsp;&emsp; & &emsp;&emsp;&emsp; Kel. Ir. I Made Budiasa Astawa<br /> </p>
           )}
