@@ -61,10 +61,9 @@ export default function App() {
       <head prefix="og: https://ogp.me/ns#">
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta property="og:title" content="National Geographic: Stories of Animals, Nature, and Culture" />
-        <meta property="og:image" content="http://clipart-library.com/data_images/320465.png"/>
-        <meta property="description" content="Explore National Geographic. A world leader in geography, cartography and exploration." />
-        <meta property="og:url" content="https://www.nationalgeographic.com" />
+        <meta property="og:title" content="The Wedding Of Erwin and Iin" />
+        <meta property="description" content="The Wedding of Erwin and Iin. Thursday, 13 October 2022" />
+        <meta property="og:url" content="https://www.weddingerwiniin.com/" />
         <Meta />
         <Links />
       </head>
