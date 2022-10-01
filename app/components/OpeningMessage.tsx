@@ -5,7 +5,7 @@ const OpeningMessage = () => {
   return (
     <div className="pt-10">
       <h3 className="text-3xl pb-5 text-center font-sans font-bold">
-        <TextWithLine>Om Swastiastu</TextWithLine>
+        <TextWithLine>Om Swastyastu</TextWithLine>
       </h3>
       <div className="pb-2 -pt-2 content-center">
         <div className="text-center text-sm sm:text-lg italic font-normal font-head text-black pb-2 sm:px-44 px-16">
