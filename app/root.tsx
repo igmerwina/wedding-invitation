@@ -43,7 +43,7 @@ export const meta: MetaFunction = () => {
     "og:image": ogimage,
     "og:image:type": "image/jpeg",
     "og:site_name": "weddingerwiniin",
-    "og:url": "https://www.weddingerwiniin.com/",
+    "og:url": "http://www.weddingerwiniin.com/",
     "og:title": "Wedding Invitation of Erwin & Iin",
     "og:description": `Kamis, 13 Oktober 2022, Bali`,
     "og:type": "website",
