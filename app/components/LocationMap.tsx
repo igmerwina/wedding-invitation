@@ -5,9 +5,9 @@ import TextWithLine from "./Utils/TextWithLine";
 
 const MAP_REDIRECT_URL =
   "https://www.google.com/maps/dir//Balai+Bajar+Cacab+Jangkahan,+H5G7%2BX44,+Cacab,+Biaung,+Penebel,+Tabanan+Regency,+Bali+82181/@-8.422521,115.1277957,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x2dd225d389fc9011:0x49760d2db5b741a4!2m2!1d115.1628337!2d-8.4226115!3e0";
-const MAP_TITLE = "Dusun Cacab, Penebel, Tabanan";
+const MAP_TITLE = "Desa Cacab, Penebel, Tabanan";
 const MAP_ADDRESS =
-  "Dusun Cacab, Biaung. Kec. Penebel, Kab. Tabanan, Bali";
+  "Desa Cacab, Biaung. Kec. Penebel, Kab. Tabanan, Bali";
 
 const LocationMap = () => {
   const { isBoth: isBoth } = useLoaderData<LoaderDataType>();

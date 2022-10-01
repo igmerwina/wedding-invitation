@@ -35,7 +35,7 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
             <Fragment>
               {!recipient ? (
                 <div className="text-white text-xl bg-[#000] rounded-lg bg-opacity-50 py-3">
-                  <div className="font-bold text-center font-head italic">
+                  <div className="font-semibold text-center font-head italic">
                     Kepada Yth: <br />
                     Bapak/Ibu/Saudara(i)
                   </div>

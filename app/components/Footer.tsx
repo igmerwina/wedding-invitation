@@ -18,25 +18,21 @@ const Footer = () => {
 
       <div className="content-center bg-[#EFEFEF]">
         <div className="text-center text-sm sm:text-lg font-normal font-head text-gray-900 py-7 mx-12 sm:px-72">
-          <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami
-            apabila Bapak/Ibu,Saudara(i) berkenan hadir
+          <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami,  {isMobile ? null :( <br /> )}
+            apabila Bapak/Ibu,Saudara(i) berkenan hadir {isMobile ? null :( <br /> )}
             dan memberikan doa restu. <br />
           </p>
-          <p className="mt-4 sm:mt-1">
-            Atas kehadiran dan doa restunya,
+          <p className="mt-4 sm:mt-5">
+            Atas kehadiran dan doa restunya, {isMobile ? null :( <br /> )}
             kami ucapkan Terima Kasih.
           </p>
-          <p className="mt-4 sm:mt-1">
+          <p className="mt-4 sm:mt-4">
             Kami yang berbahagia, <br />
           </p>
           {isMobile ? (
-            <p>
-              Kel. dr. IGP Winangun, Sp.PD & <br /> Ir. Kel. I Made Budiasa Astawa<br />
-            </p>
+            <p> Kel. dr. IGP Winangun, Sp.PD & <br /> Ir. Kel. I Made Budiasa Astawa<br /> </p>
           ) : (
-            <p>
-              Kel. dr. IGP Winangun, Sp.PD & Kel. Ir. I Made Budiasa Astawa<br />
-            </p>
+            <p> Kel. dr. IGP Winangun, Sp.PD &emsp;&emsp;&emsp; & &emsp;&emsp;&emsp; Kel. Ir. I Made Budiasa Astawa<br /> </p>
           )}
           <br />
           <div className="m-auto sm:w-24 sm:h-24 h-16 w-16 bg-center bg-contain bg-no-repeat px-10"
