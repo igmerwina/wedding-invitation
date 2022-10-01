@@ -62,8 +62,9 @@ export default function App() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta property="og:title" content="The Wedding Of Erwin and Iin" />
-        <meta property="description" content="The Wedding of Erwin and Iin. Thursday, 13 October 2022" />
-        <meta property="og:url" content="https://www.weddingerwiniin.com/" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/igmerwina/wedding-invitation/master/app/images/ogimages.jpg"/>
+        <meta property="description" content="Explore National Geographic. A world leader in geography, cartography and exploration." />
+        <meta property="og:url" content="https://www.nationalgeographic.com" />
         <Meta />
         <Links />
       </head>
