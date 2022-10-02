@@ -17,7 +17,7 @@ const Footer = () => {
       </h3>
 
       <div className="content-center bg-[#EFEFEF]">
-        <div className="text-center text-sm sm:text-lg font-normal font-head text-gray-900 py-7 mx-12 sm:px-72">
+        <div className="text-center text-sm sm:text-lg font-normal font-head text-gray-900 py-7 mx-12 sm:px-10">
           <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami,  {isMobile ? null :( <br /> )}
             apabila Bapak/Ibu,Saudara(i) berkenan hadir {isMobile ? null :( <br /> )}
             dan memberikan doa restu. <br />
