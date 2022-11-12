@@ -37,7 +37,7 @@ const Agendas = () => {
             {isBoth === '1' ? ( 
               <p> Tanggal 13 Oktober 2022 <br /> -&- <br />20 November 2022 </p>
             ) : (
-              <p> Tanggal 13 Oktober 2022 </p>
+              <p> Tanggal 20 November 2022 </p>
             )}
           </div>
         </div>
