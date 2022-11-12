@@ -109,7 +109,7 @@ export default function Index() {
         </div>
       ) : (
         <SectionWrapper className="mb-10 pt-1">
-          <LocationMap />
+          <LocationMapLombok />
         </SectionWrapper>
       )}
 
